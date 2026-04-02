@@ -116,9 +116,9 @@
 
 Tracks whether user has been asked about anonymous feature usage tracking.
 
-- **Consent asked:** false
-- **Consent decision:** pending
-- **Consent date:** (not yet decided)
+- **Consent asked:** true
+- **Consent decision:** opted-out
+- **Consent date:** 2026-03-21
 - **Last prompted:** (not yet prompted)
 
 **Values:**
@@ -132,9 +132,9 @@ Tracks whether user has been asked about anonymous feature usage tracking.
 
 Tracks whether user has been asked about ScreenPipe ambient intelligence.
 
-- **Consent asked:** false
-- **Consent decision:** pending
-- **Consent date:** (not yet decided)
+- **Consent asked:** true
+- **Consent decision:** opted-out
+- **Consent date:** 2026-03-21
 
 **Values:**
 - `Consent decision: pending` → Not yet asked

@@ -15,7 +15,7 @@ role: ""
 
 # Role group (for command filtering and adaptation)
 # Options: product, sales, marketing, finance, engineering, customer_success, operations, leadership, design, support, advisory
-role_group: ""
+role_group: "product"
 
 # Your company (optional, adds context to meeting analysis)
 company: ""
@@ -59,25 +59,25 @@ meeting_processing:
 # Controls what gets extracted from your meetings (set during onboarding based on role)
 meeting_intelligence:
   # Extract customer pain points and challenges
-  extract_customer_intel: false
-  
+  extract_customer_intel: true
+
   # Extract competitive mentions and comparisons
-  extract_competitive_intel: false
-  
+  extract_competitive_intel: true
+
   # Extract action items (always recommended)
   extract_action_items: true
-  
+
   # Extract decisions made (always recommended)
   extract_decisions: true
-  
+
   # Extract stakeholder dynamics and relationships
   extract_stakeholder_dynamics: false
-  
+
   # Extract budget, authority, need, timeline (BANT for sales)
   extract_budget_timeline: false
-  
+
   # Extract technical decisions and architecture choices
-  extract_technical_decisions: false
+  extract_technical_decisions: true
 
 # Journaling Configuration
 # Controls which journal types are enabled
