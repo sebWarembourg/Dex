@@ -24,8 +24,8 @@ Comment on travaille ensemble. Conventions établies, pas négociables session p
 
 ## Ritual hebdo
 
-- Seul point de maintenance du système : lundi ou vendredi matin
-- Durée cible : 20 minutes
+- 3 créneaux de maintenance : lundi matin, mercredi midi, vendredi matin
+- Durée cible : 20 minutes max par créneau
 - Commandes : `/week-review` → `/week-plan`
 - Si pas fait depuis >7 jours : signaler au démarrage de session
 
