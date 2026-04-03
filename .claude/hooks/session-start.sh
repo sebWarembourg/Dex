@@ -30,7 +30,7 @@ if [[ -f "$ONBOARDING_MARKER" ]]; then
 
     # Check for Claude Code updates (if 24+ hours since last check)
     if [[ -x "$CLAUDE_DIR/.scripts/check-anthropic-changelog.cjs" ]]; then
-        node "$CLAUDE_DIR/.scripts/check-anthropic-changelog.cjs" 2>/dev/null &
+        node "$CLAUDE_DIR/.scripts/check-anthropic-changelog.cjs" >/dev/null 2>&1 &
     fi
 
     # Check for pending learnings (if not checked today)
@@ -66,8 +66,8 @@ if [[ -f "$QUARTER_GOALS" ]]; then
     # Check if goals are filled in (not template)
     if ! grep -q "^\[Goal 1 Title\]" "$QUARTER_GOALS" 2>/dev/null; then
         echo "--- Quarter Goals ---"
-        # Extract goal titles and progress
-        awk '/^### [0-9]\./,/^---$/{if(/^### [0-9]\./) print; if(/^\*\*Progress:\*\*/) print}' "$QUARTER_GOALS" 2>/dev/null | head -10
+        # Extract pillar goals and status
+        awk '/^## Pilier/{name=$0; gsub(/^## /, "", name)} /^\*\*Status \*\*:|\*\*Status :\*\*/{print "• " name " " $0}' "$QUARTER_GOALS" 2>/dev/null | head -6
         echo "---"
         echo ""
     fi
