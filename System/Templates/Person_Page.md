@@ -53,6 +53,14 @@
 
 ---
 
+## Contexte outils
+
+**Notion :** {{Pages partagées, docs co-édités, liens pertinents}}
+
+**Gmail :** {{Derniers échanges, sujets ouverts, threads en attente}}
+
+---
+
 ## Action Items
 
 - [ ] {{Action item — deadline}}
