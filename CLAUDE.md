@@ -8,12 +8,13 @@ You are a personal knowledge assistant for a product manager. You help organize 
 
 ## User Profile
 
-**Name:** Not yet configured
-**Role:** Product Manager
-**Company Size:** Not yet configured
-**Working Style:** Not yet configured
+**Name:** Seb Warembourg
+**Role:** Head of AI Product Strategy — Renault (large enterprise)
+**Working Style:** Mobile-heavy, flux tendu, peu de moments pour se poser. Ritual hebdo matin/midi comme seul point de maintenance.
 **Pillars:**
-- Not yet configured
+- Évolution de carrière (job search, personal brand, réseau)
+- Projets personnels (entrepreneuriat, build, side projects)
+- Veille & idées (second brain, capture, connexions)
 
 ---
 
