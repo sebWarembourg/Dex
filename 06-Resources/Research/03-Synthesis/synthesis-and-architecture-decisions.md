@@ -267,9 +267,15 @@ Un setup personnel Claude Code pour un PM product qui :
 13. Enrichir les skills existantes avec methodology-as-code
 14. Configurer les checkpoints humains dans les workflows longs
 
-### Phase 4 -- Dogfooding
-15. Utiliser le systeme au quotidien
-16. Capturer les frictions et iterer
+### Phase 4 -- Intégrations contextuelles
+15. Connecter Gmail MCP — auto-population des échanges email par personne
+16. Connecter Notion MCP — auto-population des pages/docs liés par personne
+17. Tester l'enrichissement automatique des pages personnes via les hooks
+18. Évaluer OneDrive/iCloud sync pour le vault (backup + accès mobile)
+
+### Phase 5 -- Dogfooding
+19. Utiliser le système au quotidien
+20. Capturer les frictions et itérer
 
 ---
 
