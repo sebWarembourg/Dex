@@ -42,6 +42,17 @@ Comment on travaille ensemble. Conventions établies, pas négociables session p
 - Tâche → Work MCP via conversation naturelle
 - Insight de veille → `00-Inbox/Ideas/` avec tag `#veille`
 
+## Maintenance des reference docs
+
+Les 3 docs de référence sont vivants — les revoir régulièrement :
+- `.claude/reference/pm-frameworks.md` — ajouter les frameworks qu'on utilise, retirer ceux qui ne servent pas
+- `.claude/reference/quality-standards.md` — ajuster selon les frictions ressenties
+- `.claude/reference/working-agreements.md` — mettre à jour quand les conventions changent
+
+**Trigger de revue :** lors du `/week-review` mensuel ou quand un framework manque en session.
+
+---
+
 ## Feedback sur le système
 
 - Si quelque chose ne fonctionne pas : le dire directement, ça s'améliore
