@@ -49,6 +49,6 @@
 
 ## Ritual de suivi
 
-**Fréquence :** Hebdomadaire — lundi ou vendredi matin
+**Fréquence :** Lundi matin, mercredi midi, vendredi matin
 **Durée :** 20 minutes max
 **Commande :** `/week-review` puis `/week-plan`
