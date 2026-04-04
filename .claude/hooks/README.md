@@ -97,7 +97,7 @@ Instead of asking Claude to remember to do something (which it might forget), ho
 1. You ask Claude to process meetings
 2. You switch to other work confidently
 3. Processing completes
-4. Desktop notification: "✅ Dex finished - 20 meetings processed"
+4. Desktop notification: "✅ sw_os finished - 20 meetings processed"
 5. You return exactly when needed
 
 #### Example 4: Protected System Files
@@ -175,7 +175,7 @@ Hooks are configured in `~/.claude/settings.json` or `.claude/settings.json` (pr
 
 ---
 
-## Practical Examples for Dex
+## Practical Examples for sw_os
 
 ### 1. End-of-Day Reminder (Stop Hook)
 
@@ -226,7 +226,7 @@ Get notified when Claude Code needs your input, so you can work elsewhere.
         "hooks": [
           {
             "type": "command",
-            "command": "osascript -e 'display notification \"Dex needs your input\" with title \"Dex\"'"
+            "command": "osascript -e 'display notification \"sw_os needs your input\" with title \"sw_os\"'"
           }
         ]
       }
@@ -387,7 +387,7 @@ Some hooks only fire during a specific skill's execution, not globally. These ar
 
 ### maintenance.cjs
 
-- **Trigger:** Manual (`node .claude/hooks/maintenance.cjs`) or ask Dex to "run vault maintenance"
+- **Trigger:** Manual (`node .claude/hooks/maintenance.cjs`) or ask sw_os to "run vault maintenance"
 - **What it does:** Vault health checks — stale inbox files (>30 days), broken WikiLinks, orphaned person pages, agent memory cleanup (>90 days).
 - **Output:** Health report to stdout
 

@@ -4,7 +4,7 @@ End-of-quarter reviews and retrospectives.
 
 ## What Goes Here
 
-When you run `/quarter-review` at the end of each quarter, Dex creates a comprehensive review document here covering:
+When you run `/quarter-review` at the end of each quarter, sw_os creates a comprehensive review document here covering:
 
 - **Goal completion** — What you achieved against quarterly goals
 - **Pillar alignment** — How work distributed across strategic pillars

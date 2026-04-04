@@ -7,7 +7,7 @@
 
 ## What Is This?
 
-ScreenPipe enables **ambient work intelligence** - Dex learns what you're working on by capturing OCR text from your screen. Instead of manually logging your work, you can ask:
+ScreenPipe enables **ambient work intelligence** - sw_os learns what you're working on by capturing OCR text from your screen. Instead of manually logging your work, you can ask:
 
 - "What was I working on this morning?"
 - "Summarize my day"
@@ -72,4 +72,4 @@ This is beta - we want your feedback:
 - What's missing?
 - Any privacy concerns?
 
-Let Dave know via Slack or in your Dex conversations.
+Let Dave know via Slack or in your sw_os conversations.

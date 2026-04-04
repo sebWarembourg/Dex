@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MCP Server for Dex Onboarding System
+MCP Server for sw_os Onboarding System
 
 Provides stateful onboarding with validation, dependency checking, and vault creation.
 Ensures all required fields (especially email_domain) are collected before completion.
@@ -46,7 +46,7 @@ except ImportError:
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -765,7 +765,7 @@ def count_external_companies(meetings: List[Dict], email_domain: str) -> int:
 
 app = Server("dex-onboarding-mcp")
 
-logger.info("Starting Dex Onboarding MCP Server")
+logger.info("Starting sw_os Onboarding MCP Server")
 logger.info(f"Vault path: {BASE_DIR}")
 
 # ============================================================================

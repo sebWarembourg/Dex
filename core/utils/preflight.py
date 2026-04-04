@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dex Pre-flight Health Checker
+sw_os Pre-flight Health Checker
 
 Fast checks that configured MCP servers can actually start.
 Called from session-start.sh — outputs plain-language results.
@@ -47,7 +47,7 @@ SERVER_MODULES = {
     "calendar-mcp": "calendar_server.py",
     "career-mcp": "career_server.py",
     "granola-mcp": "granola_server.py",
-    "dex-improvements-mcp": "dex_improvements_server.py",
+    "dex-improvements-mcp": "sw_os_improvements_server.py",
     "dex-analytics": "analytics_server.py",
     "onboarding-mcp": "onboarding_server.py",
     "resume-mcp": "resume_server.py",
@@ -134,7 +134,7 @@ def check_server(server_name: str) -> dict:
 
     if not module_file:
         # Not a known dex-core server — might be user-added, skip
-        return {"status": "unknown", "note": "Not a core Dex server"}
+        return {"status": "unknown", "note": "Not a core sw_os server"}
 
     full_path = mcp_dir / module_file
     label = SERVER_LABELS.get(server_name, server_name)
@@ -242,7 +242,7 @@ def format_output(health: dict) -> str:
     if not errors:
         return ""  # All healthy — stay silent
 
-    lines = ["--- 🩺 Dex Pre-flight ---"]
+    lines = ["--- 🩺 sw_os Pre-flight ---"]
     lines.extend(errors)
     lines.append(f"  ✅ {ok_count}/{total} MCP servers ready")
     lines.append("Say: 'health check' to investigate")

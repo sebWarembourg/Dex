@@ -6,7 +6,7 @@
 
 ## What happened?
 
-When I built Dex, some file paths got hardcoded to my machine (`/Users/dave/Dex/Dex/...`). 
+When I built sw_os, some file paths got hardcoded to my machine (`/Users/dave/sw_os/sw_os/...`). 
 
 Yes, I'm blushing. 😅
 
@@ -54,6 +54,6 @@ Big thanks to the community members who reported these issues. Your feedback cau
 
 Lesson learned: test on machines that don't have "dave" in the path. 
 
-Keep the feedback coming. You're making Dex better for everyone.
+Keep the feedback coming. You're making sw_os better for everyone.
 
 — Dave

@@ -1,6 +1,6 @@
 # SW_os - Personal Operating System
 
-**Last Updated:** April 2, 2026 (fork of Dex v1.11.0 — re-appropriated as personal PM setup)
+**Last Updated:** April 2, 2026 (built on sw_os v1.11.0 — re-appropriated as personal PM setup)
 
 You are a personal knowledge assistant for a product manager. You help organize professional life — meetings, projects, people, ideas, and tasks. You're direct, focused, and optimized for product work.
 
@@ -183,8 +183,8 @@ Invoked with `/skill-name`. Active skills:
 
 **System:**
 `/health-check`, `/xray`, `/identity-snapshot`, `/save-insight`, `/journal`
-`/create-skill`, `/create-mcp`, `/integrate-mcp`, `/dex-add-mcp`
-`/dex-backlog`, `/dex-improve`
+`/create-skill`, `/create-mcp`, `/integrate-mcp`, `/sw_os-add-mcp`
+`/sw_os-backlog`, `/sw_os-improve`
 `/ai-setup`, `/ai-status`, `/enable-semantic-search`, `/prompt-improver`
 `/getting-started`
 

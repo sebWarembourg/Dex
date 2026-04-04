@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 ## Purpose
 
-Initialize your Career Development system in Dex. Captures your job description, career ladder, latest review, and long-term growth goals to create a foundation for ongoing career coaching.
+Initialize your Career Development system in sw_os. Captures your job description, career ladder, latest review, and long-term growth goals to create a foundation for ongoing career coaching.
 
 ## Usage
 
@@ -27,7 +27,7 @@ Start with a warm introduction and explain what we're setting up:
 ```markdown
 ## Career Development Setup
 
-I'm going to help you set up a Career Development system in Dex. This will become your personal career coach — tracking your growth, capturing evidence of your work, and helping you prepare for reviews and promotions.
+I'm going to help you set up a Career Development system in sw_os. This will become your personal career coach — tracking your growth, capturing evidence of your work, and helping you prepare for reviews and promotions.
 
 **What we'll capture:**
 - Your current role & responsibilities  
@@ -470,7 +470,7 @@ This folder captures evidence of your professional growth — achievements, feed
 
 ## How This Works
 
-As you work, Dex automatically captures evidence that supports your career progression:
+As you work, sw_os automatically captures evidence that supports your career progression:
 
 - **Achievements/**: Major wins, successful projects, measurable impact
 - **Feedback_Received/**: Praise from colleagues, stakeholders, manager feedback
@@ -503,7 +503,7 @@ As you work, Dex automatically captures evidence that supports your career progr
 
 ---
 
-**This system is most powerful when it captures evidence passively as you work. Don't worry about manual updates — Dex handles it.**
+**This system is most powerful when it captures evidence passively as you work. Don't worry about manual updates — sw_os handles it.**
 ```
 
 ---
@@ -542,7 +542,7 @@ Run `/career-coach` anytime you want to:
 
 ### Automatic Capture
 
-As you use Dex:
+As you use sw_os:
 - **Meetings with your manager** (via Granola) → Feedback automatically extracted
 - **Daily reviews** (`/review`) → Achievements captured as career evidence
 - **Project completions** → Impact and skills demonstrated are saved
@@ -612,7 +612,7 @@ For now, I'll create the folder structure and you can update files when you're r
 
 After running `/career-setup` once:
 
-1. **Career folder exists** → Dex knows to capture career evidence during daily work
+1. **Career folder exists** → sw_os knows to capture career evidence during daily work
 2. **Granola integration** → Manager 1:1s are flagged for feedback extraction
 3. **Review prompts** → End-of-day reviews ask about achievements worth capturing
 4. **Project completions** → Prompt to add impact to career evidence
@@ -631,7 +631,7 @@ Or manually edit the files — they're just Markdown.
 
 ---
 
-## Integration with Dex System
+## Integration with sw_os System
 
 - **Pillars**: Career goals can connect to strategic pillars
 - **Quarter Goals**: Growth objectives can become quarterly goals
@@ -642,7 +642,7 @@ Or manually edit the files — they're just Markdown.
 
 ## When to Run This
 
-- **First time using Dex** → Part of onboarding
+- **First time using sw_os** → Part of onboarding
 - **Starting a new role** → Reset and recapture
 - **Promotion cycle** → Refresh and update
 - **Annual planning** → Review and revise goals

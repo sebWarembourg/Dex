@@ -1,4 +1,4 @@
-# Dex Usage Log
+# sw_os Usage Log
 
 Tracks which features Alex has used to power `/dex-level-up` recommendations.
 

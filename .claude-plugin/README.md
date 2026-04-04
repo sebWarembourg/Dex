@@ -1,10 +1,10 @@
-# Dex Plugin Distribution Files
+# sw_os Plugin Distribution Files
 
-This directory contains everything you need to distribute Dex as a Claude Code plugin.
+This directory contains everything you need to distribute sw_os as a Claude Code plugin.
 
 ## Quick Start
 
-**Want to publish Dex?** Start here:
+**Want to publish sw_os?** Start here:
 
 1. **Read:** `EXECUTIVE_SUMMARY.md` - High-level overview and strategy
 2. **Run:** `./validate-plugin.sh` - Test your plugin before publishing
@@ -63,7 +63,7 @@ Key sections:
 
 ### 🔌 PLUGIN_README.md
 **For:** Technical users
-**Purpose:** Explain how Dex works as a plugin
+**Purpose:** Explain how sw_os works as a plugin
 **Read this if:** You want technical details
 
 Key sections:
@@ -75,7 +75,7 @@ Key sections:
 ### 🏁 INSTALLATION_QUICK_START.md
 **For:** End users
 **Purpose:** Get users up and running fast
-**Read this if:** You're a Dex user installing the plugin
+**Read this if:** You're a sw_os user installing the plugin
 
 Key sections:
 - Prerequisites

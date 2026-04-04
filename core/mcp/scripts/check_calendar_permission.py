@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Check and request calendar permissions for Dex.
+Check and request calendar permissions for sw_os.
 
 This is a one-time setup step. Once granted, Python will have persistent
 access to Calendar.app for fast EventKit queries.

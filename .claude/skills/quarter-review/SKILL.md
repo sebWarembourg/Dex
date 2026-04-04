@@ -185,9 +185,9 @@ Read `System/pillars.yaml` and assess:
 
 ## Step 5.5: System Health & Backlog Review
 
-Review the Dex system itself and improvement backlog.
+Review the sw_os system itself and improvement backlog.
 
-### Check Dex Backlog
+### Check sw_os Backlog
 
 Read `System/Dex_Backlog.md` if it exists:
 
@@ -199,13 +199,13 @@ Read `System/Dex_Backlog.md` if it exists:
 
 **Present to user:**
 
-> "**Dex System Improvement Backlog:**
+> "**sw_os System Improvement Backlog:**
 > 
 > - Total ideas captured: [count]
 > - High-priority (ready to implement): [count]
 > - Implemented this quarter: [count]
 > 
-> Looking at your Dex backlog:
+> Looking at your sw_os backlog:
 > - Any 1-2 high-impact improvements to prioritize next quarter?
 > - Any stale ideas (>6 months old) to archive?"
 
@@ -221,7 +221,7 @@ Wait for user input on:
 
 **If no Dex_Backlog.md exists:**
 - Skip this section silently
-- In review document, note: "Dex backlog system not yet in use"
+- In review document, note: "sw_os backlog system not yet in use"
 
 ---
 
@@ -329,13 +329,13 @@ reviewed_on: [date]
 - [Self-awareness gained]
 
 ### System Improvements
-- [Dex system improvements identified]
+- [sw_os system improvements identified]
 
 ---
 
 ## System Health & Improvement Backlog
 
-### Dex Backlog Activity
+### sw_os Backlog Activity
 - **Ideas captured:** [Count during quarter]
 - **Ideas implemented:** [Count marked as completed]
 - **Current high-priority ideas:** [Count with score >= 85]

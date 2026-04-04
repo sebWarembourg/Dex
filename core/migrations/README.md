@@ -1,4 +1,4 @@
-# Dex Migration Scripts
+# sw_os Migration Scripts
 
 This folder contains migration scripts for major version updates that require structural changes to user data.
 
@@ -50,7 +50,7 @@ git status
 git diff
 ```
 
-**Step 5: Update Dex**
+**Step 5: Update sw_os**
 ```bash
 git fetch upstream
 git merge upstream/main
@@ -82,7 +82,7 @@ If anything breaks, restore from backup and report the issue.
 set -e  # Exit on error
 
 echo "================================================"
-echo "Dex Migration: v1.x → v2.0.0"
+echo "sw_os Migration: v1.x → v2.0.0"
 echo "Description: [Brief description]"
 echo "================================================"
 echo ""
@@ -125,7 +125,7 @@ echo "================================================"
 echo ""
 echo "Next steps:"
 echo "1. Review changes: git status && git diff"
-echo "2. Update Dex: git fetch upstream && git merge upstream/main"
+echo "2. Update sw_os: git fetch upstream && git merge upstream/main"
 echo "3. Test workflows: /daily-plan, person pages, tasks"
 echo ""
 ```

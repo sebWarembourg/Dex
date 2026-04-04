@@ -1,4 +1,4 @@
-# Dex Plugin Distribution - Executive Summary
+# sw_os Plugin Distribution - Executive Summary
 
 **Date:** February 12, 2026
 **Status:** Ready for Testing Phase
@@ -8,11 +8,11 @@
 
 ## What We Built
 
-I've converted your Claudesidian/Dex system into a proper **Claude Code plugin** that can be distributed to users with **zero dependency** on your personal vault data.
+I've converted your Claudesidian/sw_os system into a proper **Claude Code plugin** that can be distributed to users with **zero dependency** on your personal vault data.
 
 ### What This Means
 
-Users can now install Dex with one command:
+Users can now install sw_os with one command:
 ```bash
 claude plugin install https://github.com/YOUR-USERNAME/dex
 ```
@@ -24,7 +24,7 @@ No manual file copying, no complex setup—just install and run `/setup`.
 ## Files Created for You
 
 ### 1. **Plugin Manifest** (`.claude-plugin/plugin.json`)
-- Defines Dex as a Claude Code plugin
+- Defines sw_os as a Claude Code plugin
 - Configures all 9 MCP servers
 - Specifies Python requirements
 - Ready to publish
@@ -72,7 +72,7 @@ claude plugin install dex@dex-marketplace
 
 **Pros:**
 - Professional distribution
-- Can add more plugins later (Dex Premium, integrations, etc.)
+- Can add more plugins later (sw_os Premium, integrations, etc.)
 - Full control, no approval delays
 - Build a brand
 
@@ -141,7 +141,7 @@ claude plugin install dex  # from official marketplace
 
 Most Claude Code plugins are **skills** or **agents** that augment your workflow.
 
-**Dex is an entire operating system:**
+**sw_os is an entire operating system:**
 - Creates a complete vault structure
 - Manages persistent state (tasks, people, projects)
 - Has intelligent onboarding
@@ -203,7 +203,7 @@ Track these after launch:
 Not urgent, but if you want to monetize later:
 
 ### Freemium Model
-- **Free:** Current Dex (everything you've built)
+- **Free:** Current sw_os (everything you've built)
 - **Pro ($10/mo):** Advanced integrations (Salesforce, HubSpot, Slack)
 - **Enterprise ($50/user/mo):** Team deployment, custom setup, priority support
 
@@ -293,14 +293,14 @@ Before launching:
 
 **You're 90% there.**
 
-The hard work—building Dex—is done. What remains is:
+The hard work—building sw_os—is done. What remains is:
 1. Testing (4-6 hours)
 2. GitHub setup (2 hours)
 3. Marketing (ongoing)
 
 **Start with:** Read `READY_TO_PUBLISH.md` and run `claude plugin validate dex-core/`
 
-**First milestone:** 5 beta users successfully install and use Dex this week.
+**First milestone:** 5 beta users successfully install and use sw_os this week.
 
 **Big milestone:** 100 users by end of month via GitHub direct installation.
 
@@ -315,4 +315,4 @@ The hard work—building Dex—is done. What remains is:
 
 **You've got this.** The plugin is ready—now it's just execution.
 
-Let's turn Dex into the #1 personal knowledge management plugin for Claude Code. 🚀
+Let's turn sw_os into the #1 personal knowledge management plugin for Claude Code. 🚀

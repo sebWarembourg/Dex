@@ -1,7 +1,7 @@
 """
-Dex Productivity Integrations
+sw_os Productivity Integrations
 
-Connect Notion, Slack, and Google Workspace to Dex for richer context.
+Connect Notion, Slack, and Google Workspace to sw_os for richer context.
 """
 
 from .detect import (

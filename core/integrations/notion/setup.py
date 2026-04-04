@@ -2,7 +2,7 @@
 """
 Notion Integration Setup
 
-Guides users through connecting Notion to Dex using the official MCP.
+Guides users through connecting Notion to sw_os using the official MCP.
 """
 
 import json
@@ -46,7 +46,7 @@ def get_setup_instructions() -> str:
 
 1. Go to [notion.so/my-integrations](https://www.notion.so/my-integrations)
 2. Click **"+ New integration"**
-3. Name it "Dex" (or whatever you like)
+3. Name it "sw_os" (or whatever you like)
 4. Select your workspace
 5. Click **Submit**
 
@@ -60,13 +60,13 @@ After creating the integration:
 
 **Important:** Notion integrations can only access pages explicitly shared with them.
 
-1. Open any Notion page you want Dex to access
+1. Open any Notion page you want sw_os to access
 2. Click **"Share"** in the top right
 3. Click **"Invite"**
-4. Search for your integration name ("Dex")
+4. Search for your integration name ("sw_os")
 5. Click **"Invite"**
 
-Repeat for all pages/databases you want Dex to access.
+Repeat for all pages/databases you want sw_os to access.
 
 ### Step 4: Paste Your Token
 
@@ -91,7 +91,7 @@ def install(token: str) -> Tuple[bool, str]:
     
     save_claude_config(config)
     
-    # Save to Dex integrations config
+    # Save to sw_os integrations config
     dex_config_path = Path(os.environ.get("DEX_VAULT", ".")) / "System" / "integrations" / "notion.yaml"
     dex_config_path.parent.mkdir(parents=True, exist_ok=True)
     

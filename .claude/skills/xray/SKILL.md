@@ -7,7 +7,7 @@ description: Understand what just happened under the hood - learn AI by seeing i
 
 **Default behavior:** Explain what just happened in THIS conversation — the specific tools, files, and context that were used, with educational explanations of WHY.
 
-**With qualifiers:** Deep dive into specific topics (AI fundamentals, Dex architecture, how to extend).
+**With qualifiers:** Deep dive into specific topics (AI fundamentals, sw_os architecture, how to extend).
 
 ---
 
@@ -17,7 +17,7 @@ The best way to learn is by examining what just happened, not abstract concepts.
 
 1. **Show the work** - What tools ran, what files were read/written
 2. **Explain why** - Why each action was necessary
-3. **Connect to concepts** - Link specific actions to how AI/Dex works
+3. **Connect to concepts** - Link specific actions to how AI/sw_os works
 4. **Empower extension** - "You could customize this by..."
 
 **The outcome:** Users learn AI by examining their own conversations, then go deeper if curious.
@@ -40,10 +40,10 @@ When user just says `/xray` with no qualifier:
 |---------|--------------|
 | `/xray` | (default) Explain what just happened in this chat |
 | `/xray ai` or `/xray fundamentals` | First principles: context windows, tokens, statelessness |
-| `/xray dex` or `/xray architecture` | How Dex works: CLAUDE.md, hooks, MCPs, skills |
+| `/xray dex` or `/xray architecture` | How sw_os works: CLAUDE.md, hooks, MCPs, skills |
 | `/xray boot` or `/xray session start` | The session startup sequence |
 | `/xray today` | ScreenPipe analysis of your day |
-| `/xray extend` or `/xray customize` | How to customize and build on Dex yourself |
+| `/xray extend` or `/xray customize` | How to customize and build on sw_os yourself |
 
 ---
 
@@ -200,7 +200,7 @@ Or ask anything: "How do hooks work?", "What's an MCP?", "How can I add my own t
 ```markdown
 ## 🧠 How AI Actually Works
 
-Let me explain the core concepts that underpin everything Dex does.
+Let me explain the core concepts that underpin everything sw_os does.
 
 ---
 
@@ -215,8 +215,8 @@ This is true for ALL LLM-based AI — ChatGPT, Claude, Gemini, all of them.
 **Why?** LLMs are "stateless." They process text in, text out, with no permanent 
 storage between sessions. Each conversation starts from zero.
 
-**So how does Dex remember things?** We engineer around the limitation. 
-That's what Dex is — clever engineering to give a forgetful AI the *appearance* 
+**So how does sw_os remember things?** We engineer around the limitation. 
+That's what sw_os is — clever engineering to give a forgetful AI the *appearance* 
 of memory, context, and continuity.
 
 ---
@@ -243,7 +243,7 @@ When you chat with an AI, there's an invisible "window" of text the AI can see:
 **Key insight:** The AI can only work with what's IN the context window. 
 If information isn't in there, the AI doesn't know it exists.
 
-**Dex's job:** Get the RIGHT information INTO that window at the RIGHT time.
+**sw_os's job:** Get the RIGHT information INTO that window at the RIGHT time.
 
 ---
 
@@ -258,7 +258,7 @@ Context windows are measured in "tokens" (roughly 4 characters = 1 token).
 **Why it matters:** There's a budget. Load too much context and you hit limits 
 or slow things down. Load too little and the AI lacks crucial information.
 
-**Dex's approach:** Selective loading. Don't dump everything — load what's 
+**sw_os's approach:** Selective loading. Don't dump everything — load what's 
 *relevant* to what you're asking about.
 
 ---
@@ -266,13 +266,13 @@ or slow things down. Load too little and the AI lacks crucial information.
 ### Concept 3: System Prompts (The Personality)
 
 Before your first message, there's already text in the context window: 
-the **system prompt**. For Dex, that's `CLAUDE.md`.
+the **system prompt**. For sw_os, that's `CLAUDE.md`.
 
 ```
 ┌─────────────────────────────────────────────────┐
 │ CLAUDE.md (loaded before you type anything)     │
 ├─────────────────────────────────────────────────┤
-│ "You are Dex, a personal knowledge assistant"   │
+│ "You are sw_os, a personal knowledge assistant"   │
 │ "User's pillars: [your pillars]"                │
 │ "When tasks are mentioned, use Work MCP"        │
 │ "Person pages are in 05-Areas/People/"          │
@@ -296,7 +296,7 @@ Claude can't *do* things by default — it can only generate text. But with
 - Query databases
 - Call APIs
 
-In Dex, tools come from **MCP servers** (Model Context Protocol). Each MCP 
+In sw_os, tools come from **MCP servers** (Model Context Protocol). Each MCP 
 gives Claude new capabilities.
 
 **Without tools:** Claude can only talk.
@@ -331,27 +331,27 @@ Long conversations = more context = closer to limits.
 
 Understanding these fundamentals helps you:
 
-1. **Know why Dex loads things at session start** — to get context into the window
+1. **Know why sw_os loads things at session start** — to get context into the window
 2. **Understand why some info is "missing"** — it wasn't loaded into context
 3. **See opportunities to extend** — what else could be loaded? what tools could help?
 
 ---
 
-**Want to see Dex's specific architecture?** Try `/xray dex`
+**Want to see sw_os's specific architecture?** Try `/xray dex`
 ```
 
 ---
 
-## MODE: Dex Architecture (`/xray dex`)
+## MODE: sw_os Architecture (`/xray dex`)
 
-**Purpose:** Explain the specific building blocks that make Dex work.
+**Purpose:** Explain the specific building blocks that make sw_os work.
 
 ### Output Format
 
 ```markdown
-## 🏗️ How Dex Works: The Architecture
+## 🏗️ How sw_os Works: The Architecture
 
-Now that you understand AI fundamentals, here's how Dex engineers around 
+Now that you understand AI fundamentals, here's how sw_os engineers around 
 the limitations to create something useful.
 
 ---
@@ -385,19 +385,19 @@ Therefore, AI can "remember" by reading what was written before.
 
 ### Building Block 1: CLAUDE.md (The Brain)
 
-The system prompt that defines who Dex is and how it behaves.
+The system prompt that defines who sw_os is and how it behaves.
 
 **Location:** `/CLAUDE.md` (root of your vault)
 
 **Contains:**
 - Your user profile (name, role, company)
 - Your strategic pillars
-- How Dex should behave
+- How sw_os should behave
 - What skills are available
 - References to other docs
 
 **Why it matters:** This loads FIRST, before anything else. It shapes every 
-response. Edit this, and you change how Dex thinks.
+response. Edit this, and you change how sw_os thinks.
 
 **You can customize:**
 ```markdown
@@ -417,7 +417,7 @@ When you start a chat, things happen BEFORE you type anything.
 - Surface relevant context (person info, project status)
 - Pre-load data you'll likely need
 
-**Current hooks in Dex:**
+**Current hooks in sw_os:**
 - Session memories injection
 - Person context surfacing
 - Company context surfacing
@@ -478,7 +478,7 @@ Your Vault/
 │   ├── People/         ← Person pages
 │   └── Companies/      ← Company profiles
 ├── 06-Resources/       ← Reference material
-└── System/             ← Dex configuration
+└── System/             ← sw_os configuration
 ```
 
 **Why plain Markdown?**
@@ -677,7 +677,7 @@ ScreenPipe isn't running, so I can't analyze your full day.
 **What you'll get:**
 - Time breakdown by app
 - Activity patterns
-- "Moments you missed" where Dex could have helped
+- "Moments you missed" where sw_os could have helped
 ```
 
 ### If ScreenPipe is running
@@ -724,7 +724,7 @@ Query ScreenPipe for today's activity and present:
 ### Output Format
 
 ```markdown
-## 🛠️ How to Extend Dex
+## 🛠️ How to Extend sw_os
 
 Now that you understand how it works, here's how to make it your own.
 
@@ -817,9 +817,9 @@ Run `/create-mcp` for guided setup.
 
 ### The Extension Philosophy
 
-**Dex is scaffolding, not a finished product.** It's a starting point you customize.
+**sw_os is scaffolding, not a finished product.** It's a starting point you customize.
 
-The goal isn't to use Dex "as is" forever — it's to understand it well 
+The goal isn't to use sw_os "as is" forever — it's to understand it well 
 enough to make it truly yours.
 
 **Question for you:** What do you wish the AI knew at the start of 

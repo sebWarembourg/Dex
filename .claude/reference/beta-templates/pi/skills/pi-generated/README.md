@@ -34,7 +34,7 @@ Pi extension skills use the `pi:` prefix:
 - `pi:dex-mcp-bridge` - MCP bridge extension
 - `pi:custom-tool` - Custom extension
 
-This distinguishes them from native Dex skills.
+This distinguishes them from native sw_os skills.
 
 ## Related
 

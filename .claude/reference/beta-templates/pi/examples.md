@@ -640,4 +640,4 @@ Created something useful? Share it in the beta channel! Include:
 2. What it does
 3. Any iterations you made
 
-Your best ideas might become built-in Dex features.
+Your best ideas might become built-in sw_os features.

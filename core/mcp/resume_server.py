@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Resume Builder MCP Server for Dex
+Resume Builder MCP Server for sw_os
 
 Provides stateful, deterministic resume building with validation,
 formatting, and career evidence integration.
@@ -72,7 +72,7 @@ from resume_parser import (
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -1192,7 +1192,7 @@ async def _main():
     """Async main entry point for the MCP server"""
     if _HAS_HEALTH:
         _mark_healthy("resume-mcp")
-    logger.info("Starting Dex Resume Builder MCP Server")
+    logger.info("Starting sw_os Resume Builder MCP Server")
     logger.info(f"Vault path: {BASE_DIR}")
     logger.info(f"Resume directory: {RESUME_DIR}")
     logger.info(f"Sessions directory: {SESSIONS_DIR}")

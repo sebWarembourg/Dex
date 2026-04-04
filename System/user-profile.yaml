@@ -47,7 +47,7 @@ communication:
   coaching_style: "collaborative"  # options: encouraging, collaborative, challenging
 
 # Meeting Processing Configuration
-# How Dex processes meetings from Granola
+# How sw_os processes meetings from Granola
 meeting_processing:
   # Mode: "manual" (run /process-meetings) or "automatic" (background sync)
   mode: manual

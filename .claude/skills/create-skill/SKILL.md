@@ -1,15 +1,15 @@
 ---
 name: create-skill
-description: Create a custom skill that's protected from Dex updates. Automatically appends -custom to ensure your skill is never overwritten.
+description: Create a custom skill that's protected from sw_os updates. Automatically appends -custom to ensure your skill is never overwritten.
 ---
 
 # Create Custom Skill
 
-Create your own skill that's protected from Dex updates.
+Create your own skill that's protected from sw_os updates.
 
 ## How It Works
 
-When you create a skill with this command, Dex automatically:
+When you create a skill with this command, sw_os automatically:
 1. Appends `-custom` to the folder name (so it's never overwritten by updates)
 2. Creates the proper SKILL.md structure
 3. Sets up optional folders for scripts, references, and assets
@@ -58,7 +58,7 @@ description: {user's description}
 
 ## Notes
 
-- This is a custom skill, protected from Dex updates
+- This is a custom skill, protected from sw_os updates
 - Edit `.claude/skills/{name}-custom/SKILL.md` to modify
 ```
 
@@ -69,7 +69,7 @@ description: {user's description}
 
 Your skill is ready to use. Run /{name}-custom to try it.
 
-**Protected from updates:** The -custom suffix means Dex updates
+**Protected from updates:** The -custom suffix means sw_os updates
 will never overwrite this skill. It's yours to customize.
 
 **To edit:** Modify .claude/skills/{name}-custom/SKILL.md
@@ -82,7 +82,7 @@ will never overwrite this skill. It's yours to customize.
 **Result:**
 - Folder: `.claude/skills/board-update-custom/`
 - Invoke with: `/board-update-custom`
-- Protected from all Dex updates
+- Protected from all sw_os updates
 
 **User:** "Create a skill called weekly-standup-custom"
 

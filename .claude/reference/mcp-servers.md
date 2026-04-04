@@ -23,7 +23,7 @@ Traditional approach: AI directly parses raw files/APIs every time (slow, incons
 
 ## Built-in MCP Servers
 
-Dex includes eight custom MCP servers in `core/mcp/`:
+sw_os includes eight custom MCP servers in `core/mcp/`:
 
 ### Work MCP (`work_server.py`)
 
@@ -71,7 +71,7 @@ You run `/daily-plan` at 8am. Calendar MCP fetches today's meetings:
 - 10am: Product Review (Sarah, Mike, Alex)
 - 2pm: Customer Call - Acme Corp (John from external contacts)
 
-Dex automatically:
+sw_os automatically:
 - Pulls person pages for Sarah, Mike, Alex, John
 - Surfaces recent meeting notes with each
 - Shows outstanding action items
@@ -102,7 +102,7 @@ Granola MCP:
 1. Searches local transcript database for meetings with Sarah
 2. Returns 2 meetings from last week
 3. Extracts key topics: roadmap planning, hiring timeline, Q1 goals
-4. Dex summarizes: "Last week you discussed Q1 roadmap priorities. Sarah mentioned hiring concerns for the design team. Follow up on design headcount."
+4. sw_os summarizes: "Last week you discussed Q1 roadmap priorities. Sarah mentioned hiring concerns for the design team. Follow up on design headcount."
 
 **Tools:** `granola_get_recent_meetings`, `granola_search_meetings`, `granola_get_meeting_details`
 
@@ -183,13 +183,13 @@ Sessions auto-save after each step. You can resume later with `load_session()`.
 
 ---
 
-### Dex Improvements MCP (`dex_improvements_server.py`)
+### sw_os Improvements MCP (`dex_improvements_server.py`)
 
 **What it does:**  
-Capture and track Dex system improvement ideas with automatic duplicate detection. Powers the `/dex-backlog` workflow.
+Capture and track sw_os system improvement ideas with automatic duplicate detection. Powers the `/dex-backlog` workflow.
 
 **Why it's an MCP:**  
-You want to capture improvement ideas from any context (during reviews, while planning, mid-conversation) without context switching. The Dex Improvements MCP provides instant capture with automatic ID generation and similarity checking.
+You want to capture improvement ideas from any context (during reviews, while planning, mid-conversation) without context switching. The sw_os Improvements MCP provides instant capture with automatic ID generation and similarity checking.
 
 **Power:**
 - **Quick capture** - One command, idea stored with unique ID and metadata
@@ -201,7 +201,7 @@ You want to capture improvement ideas from any context (during reviews, while pl
 **Real-world example:**  
 During `/review`, you realize: "I keep forgetting to check task dependencies. We should auto-suggest blocked-by relationships."
 
-You mention this → Dex Improvements MCP:
+You mention this → sw_os Improvements MCP:
 1. Generates ID `idea-042`
 2. Checks for similar ideas → finds `idea-019: "Link related tasks together"` (65% similarity)
 3. Asks: "Similar to idea-019. Is this different or an extension?"
@@ -240,7 +240,7 @@ New user runs onboarding → provides name, role, company size → **tries to sk
 ### Update Checker MCP (`update_checker.py`)
 
 **What it does:**  
-GitHub update detection for `/dex-update` and `/dex-rollback`. Checks Dex repository for new releases, parses changelogs, and manages version comparison.
+GitHub update detection for `/dex-update` and `/dex-rollback`. Checks sw_os repository for new releases, parses changelogs, and manages version comparison.
 
 **Why it's an MCP:**  
 Update checking requires structured version tracking, git operations, changelog parsing, and rollback state management. MCP provides consistent interface for update workflows vs. shell scripts with unpredictable outputs.
@@ -266,12 +266,12 @@ User runs `/dex-update` → Update Checker MCP checks GitHub → finds v2.1.0 wi
 | Apple Calendar | `calendar_server.py` | Built-in |
 | Granola | `granola_server.py` | Built-in |
 | Work | `work_server.py` | Built-in (always enabled) |
-| Dex Improvements | `dex_improvements_server.py` | Built-in |
+| sw_os Improvements | `dex_improvements_server.py` | Built-in |
 | Career | `career_server.py` | Built-in |
 | Resume | `resume_server.py` | Built-in |
 | Onboarding | `onboarding_server.py` | Built-in |
 | Update Checker | `update_checker.py` | Built-in |
-| Dex Improvements | `dex_improvements_server.py` | Built-in |
+| sw_os Improvements | `dex_improvements_server.py` | Built-in |
 | Pendo | Hosted (OAuth) | External (optional) |
 
 ### Setting Up Integrations
@@ -301,7 +301,7 @@ Example config:
       "args": ["/path/to/dex/core/mcp/work_server.py"],
       "env": { "VAULT_PATH": "/path/to/dex" }
     },
-    "dex-improvements-mcp": {
+    "sw_os-improvements-mcp": {
       "command": "python",
       "args": ["/path/to/dex/core/mcp/dex_improvements_server.py"],
       "env": { "VAULT_PATH": "/path/to/dex" }
@@ -334,15 +334,15 @@ When creating custom MCP servers, **use the `user-` or `custom-` prefix** in the
 
 **Why this matters:**
 
-When you run `/dex-update`, Dex preserves any MCP entries named `user-*` or `custom-*`. Your custom integrations will never be overwritten by updates.
+When you run `/dex-update`, sw_os preserves any MCP entries named `user-*` or `custom-*`. Your custom integrations will never be overwritten by updates.
 
-If you name an MCP server without this prefix (e.g., `gmail-mcp`) and a future Dex update adds a server with the same name, you'll be asked which version to keep. Using the prefix avoids this conflict entirely.
+If you name an MCP server without this prefix (e.g., `gmail-mcp`) and a future sw_os update adds a server with the same name, you'll be asked which version to keep. Using the prefix avoids this conflict entirely.
 
 ---
 
 ## Background Automation
 
-Dex includes background automation that runs independently of Claude/Cursor, enabling the system to learn continuously.
+sw_os includes background automation that runs independently of Claude/Cursor, enabling the system to learn continuously.
 
 ### Anthropic Changelog Monitoring
 

@@ -109,7 +109,7 @@ Disable Pi mode.
 
 ### `/pi <skill>` (e.g., `/pi /daily-plan`)
 
-Run a Dex skill through Pi with full context.
+Run a sw_os skill through Pi with full context.
 
 **Steps:**
 
@@ -141,7 +141,7 @@ Run a Dex skill through Pi with full context.
    ```markdown
    # Task: [Skill Name]
 
-   You are helping a user with their personal knowledge system (Dex).
+   You are helping a user with their personal knowledge system (sw_os).
    Execute the following skill instructions.
 
    ## Context
@@ -311,7 +311,7 @@ After running a task through Pi:
    - Quality of output
    - Time taken (subjective)
    - Ease of iteration
-   - Integration with Dex
+   - Integration with sw_os
 
 4. **Capture learnings** (optional):
    ```
@@ -324,7 +324,7 @@ After running a task through Pi:
 ## Notes
 
 - Pi runs as a **separate process** in its own terminal
-- Pi has access to your vault files but **not** Dex MCP servers
+- Pi has access to your vault files but **not** sw_os MCP servers
 - For MCP access, Pi uses the MCP bridge (if configured in `.pi/`)
 - Results may differ because Pi's approach is more minimal
 

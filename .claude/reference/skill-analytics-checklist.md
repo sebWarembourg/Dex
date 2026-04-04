@@ -1,6 +1,6 @@
-# Dex Skill Development - Analytics Checklist
+# sw_os Skill Development - Analytics Checklist
 
-**When creating or modifying any Dex skill, MCP tool, or capability, complete this checklist.**
+**When creating or modifying any sw_os skill, MCP tool, or capability, complete this checklist.**
 
 This ensures all new features are tracked for product analytics (if user has opted in).
 
@@ -22,7 +22,7 @@ This ensures all new features are tracked for product analytics (if user has opt
 - What users DID with the feature (only that they used it)
 - Free-form text input
 - PII
-- User customizations or additions (only Dex built-in features)
+- User customizations or additions (only sw_os built-in features)
 
 ---
 
@@ -89,7 +89,7 @@ mark_feature_used('Feature name')
 
 Before finalizing, verify:
 
-- [ ] **Dex-only** - Only tracking built-in Dex features (not user customizations)
+- [ ] **sw_os-only** - Only tracking built-in sw_os features (not user customizations)
 - [ ] **Usage not content** - Tracking THAT feature was used, not what they did with it
 - [ ] No personal content (names, task titles, meeting content, conversations)
 - [ ] Only categorical or numeric values (counts, categories)
@@ -145,4 +145,4 @@ Mark feature used: "My workflow"
 
 ---
 
-*This checklist ensures Dex can track feature adoption while respecting user privacy.*
+*This checklist ensures sw_os can track feature adoption while respecting user privacy.*

@@ -199,7 +199,7 @@ def create_item(list_name: str, title: str, notes: str = "", due_date: str = "")
 def list_completed_items(list_name: str):
     """Get completed reminders from a specific list (for sync checking).
 
-    Used to detect items the user marked done on their phone so Dex can
+    Used to detect items the user marked done on their phone so sw_os can
     sync the completion back to Tasks.md.
     """
     store = get_store()
@@ -234,8 +234,8 @@ def list_completed_items(list_name: str):
 def find_and_complete(list_name: str, title_query: str):
     """Find a reminder by title match and mark it complete.
 
-    Used for Dex → Reminders sync: when a task is marked done in Dex,
-    clear the matching Reminder in 'Dex Today' to prevent stale notifications.
+    Used for sw_os → Reminders sync: when a task is marked done in sw_os,
+    clear the matching Reminder in 'sw_os Today' to prevent stale notifications.
     """
     store = get_store()
     target = find_reminder_list(store, list_name)
@@ -282,7 +282,7 @@ def find_and_complete(list_name: str, title_query: str):
 def clear_completed(list_name: str):
     """Remove all completed reminders from a list.
 
-    Used to clean up 'Dex Today' at the start of a new day so yesterday's
+    Used to clean up 'sw_os Today' at the start of a new day so yesterday's
     completed items don't clutter the list.
     """
     store = get_store()
@@ -310,12 +310,12 @@ def clear_completed(list_name: str):
 
 
 def ensure_lists():
-    """Create 'Dex Inbox' and 'Dex Today' lists if they don't exist."""
+    """Create 'sw_os Inbox' and 'sw_os Today' lists if they don't exist."""
     store = get_store()
     created = []
     existing = []
 
-    for list_name in ["Dex Inbox", "Dex Today"]:
+    for list_name in ["sw_os Inbox", "sw_os Today"]:
         if find_reminder_list(store, list_name):
             existing.append(list_name)
             continue

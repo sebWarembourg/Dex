@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MCP Server for Dex Beta Features System
+MCP Server for sw_os Beta Features System
 
 Provides tools for:
 - Beta code validation and activation
@@ -36,7 +36,7 @@ import mcp.types as types
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -107,9 +107,9 @@ def setup_pi_integration() -> bool:
             shutil.copy(agents_template, agents_dest)
         elif not agents_dest.exists():
             # Create minimal AGENTS.md if no template
-            agents_dest.write_text("""# Dex Context for Pi
+            agents_dest.write_text("""# sw_os Context for Pi
 
-You are working in a Dex vault - a personal knowledge management system.
+You are working in a sw_os vault - a personal knowledge management system.
 
 ## Key Paths
 - Tasks: 03-Tasks/Tasks.md
@@ -692,7 +692,7 @@ async def _main():
     """Async main entry point for the MCP server"""
     if _HAS_HEALTH:
         _mark_healthy("beta-mcp")
-    logger.info("Starting Dex Beta Features MCP Server")
+    logger.info("Starting sw_os Beta Features MCP Server")
     logger.info(f"Vault path: {BASE_DIR}")
     logger.info(f"Beta features file: {BETA_FEATURES_FILE}")
 

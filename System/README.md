@@ -1,6 +1,6 @@
 # System
 
-Configuration and system files for Dex.
+Configuration and system files for sw_os.
 
 ## Key Files
 
@@ -42,7 +42,7 @@ Your strategic pillars define your main focus areas. Everything ladders up to pi
 - Daily work supports weekly priorities
 - Tasks are tagged with pillar associations
 
-To update pillars, just ask Dex: "Update my pillars" or edit `pillars.yaml` directly.
+To update pillars, just ask sw_os: "Update my pillars" or edit `pillars.yaml` directly.
 
 ### User Profile
 
@@ -54,7 +54,7 @@ Stores preferences like:
 - Journaling preferences
 - Role-specific settings
 
-These preferences shape how Dex communicates and what features are enabled.
+These preferences shape how sw_os communicates and what features are enabled.
 
 ## Onboarding
 
@@ -64,4 +64,4 @@ After onboarding, run `/getting-started` for an interactive tour of available fe
 
 ## Usage
 
-Most of the time you won't interact with System/ directly — Dex manages it. But when you want to adjust strategic direction or preferences, the key files are here.
+Most of the time you won't interact with System/ directly — sw_os manages it. But when you want to adjust strategic direction or preferences, the key files are here.

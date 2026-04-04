@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Bidirectional sync daemon for Obsidian ↔ Dex
+Bidirectional sync daemon for Obsidian ↔ sw_os
 Monitors file changes and syncs task states using Work MCP
 """
 import os
@@ -89,7 +89,7 @@ class DexSyncHandler(FileSystemEventHandler):
 
 def start_daemon():
     """Start the sync daemon"""
-    logger.info("Starting Dex Obsidian Sync Daemon")
+    logger.info("Starting sw_os Obsidian Sync Daemon")
     logger.info(f"Watching: {BASE_DIR}")
     logger.info(f"Log file: {LOG_FILE}")
     

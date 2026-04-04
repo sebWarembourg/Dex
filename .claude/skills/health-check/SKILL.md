@@ -1,11 +1,11 @@
 ---
 name: health-check
-description: Diagnose and fix Dex system health issues — MCP servers, config, recent errors
+description: Diagnose and fix sw_os system health issues — MCP servers, config, recent errors
 ---
 
 ## Purpose
 
-Diagnose what's working, what's broken, and fix what can be fixed. This is Dex's self-repair system. It reads health data from pre-flight checks and error logs, translates technical failures into plain language, and offers specific fixes.
+Diagnose what's working, what's broken, and fix what can be fixed. This is sw_os's self-repair system. It reads health data from pre-flight checks and error logs, translates technical failures into plain language, and offers specific fixes.
 
 ## When to Run
 
@@ -60,7 +60,7 @@ If `.logs/error-queue.json` doesn't exist, there are no logged errors. This is g
 If the `.logs/` directory doesn't exist at all, the health system hasn't been set up yet. Tell the user:
 
 ```
-The health monitoring system isn't set up yet. This is normal if you just updated Dex.
+The health monitoring system isn't set up yet. This is normal if you just updated sw_os.
 
 Want me to check your MCP servers manually? I can verify each one is working.
 ```
@@ -90,7 +90,7 @@ Stop here. Don't pad with unnecessary detail.
 **If there are issues, show them grouped by severity:**
 
 ```
-Dex Health Report
+sw_os Health Report
 ━━━━━━━━━━━━━━━━
 
 ERRORS (need attention)
@@ -278,7 +278,7 @@ Want me to run a fresh pre-flight check to verify everything?
    ✓ calendar-mcp — OK
    ✓ career-mcp — OK
    ✗ granola-mcp — still failing (missing package)
-   ✓ dex-improvements-mcp — OK
+   ✓ sw_os-improvements-mcp — OK
    ...
 
    [X]/[Y] MCP servers operational
@@ -318,7 +318,7 @@ This only fires if the user has opted into analytics. No action needed if it ret
 
 ### No Health Files Exist
 
-The health system hasn't been set up yet. This is expected for new or recently updated Dex installations.
+The health system hasn't been set up yet. This is expected for new or recently updated sw_os installations.
 
 Offer to do a manual check of MCP servers by testing imports, then report what's working.
 
@@ -377,5 +377,5 @@ Don't go into fix mode unless asked.
 
 - `/ai-status` — Check AI model configuration specifically
 - `/ai-setup` — Configure API keys and model preferences
-- `/dex-update` — Update Dex (often fixes package issues)
-- `/xray` — Understand how Dex's architecture works under the hood
+- `/dex-update` — Update sw_os (often fixes package issues)
+- `/xray` — Understand how sw_os's architecture works under the hood

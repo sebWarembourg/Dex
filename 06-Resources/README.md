@@ -5,7 +5,7 @@ Reference material you consult but aren't actively working on.
 ## Subfolders
 
 - **Learnings/** — Compound knowledge organized by topic
-- **Dex_System/** — Documentation about how Dex works
+- **Dex_System/** — Documentation about how sw_os works
 - **Quarterly_Reviews/** — Quarterly reflection and strategic reviews
 
 ## What Goes Here

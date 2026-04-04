@@ -1,6 +1,6 @@
-# Dex - Personal Knowledge System (Pi Agent Configuration)
+# sw_os - Personal Knowledge System (Pi Agent Configuration)
 
-You are working in a **Dex vault** - a personal knowledge system for organizing professional life. This file provides the essential context for Pi agents operating in this workspace.
+You are working in a **sw_os vault** - a personal knowledge system for organizing professional life. This file provides the essential context for Pi agents operating in this workspace.
 
 ---
 
@@ -92,8 +92,8 @@ Pillars (ongoing) -> Quarter Goals (optional) -> Week Priorities -> Daily Plans 
 ## Reference Documentation
 
 For detailed system information:
-- `06-Resources/Dex_System/Dex_System_Guide.md` - Complete usage guide
-- `06-Resources/Dex_System/Folder_Structure.md` - Folder details
+- `06-Resources/sw_os_System/Dex_System_Guide.md` - Complete usage guide
+- `06-Resources/sw_os_System/Folder_Structure.md` - Folder details
 - `CLAUDE.md` - Full Claude Code configuration
 
 ---

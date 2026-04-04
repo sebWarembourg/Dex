@@ -1,4 +1,4 @@
-# Dex FAQ (DRAFT)
+# sw_os FAQ (DRAFT)
 
 > **Status:** Internal draft - not yet released
 > **Last Updated:** 2026-02-04
@@ -7,7 +7,7 @@
 
 ## Syncing & Multi-Machine Setup
 
-### How do I sync Dex across multiple computers?
+### How do I sync sw_os across multiple computers?
 
 The best option is **Obsidian Sync** ($8/month from Obsidian).
 
@@ -44,13 +44,13 @@ Your vault will sync automatically across all devices where you're signed in.
 
 ---
 
-### I've already set up Dex but didn't enable Obsidian integration. How do I turn it on?
+### I've already set up sw_os but didn't enable Obsidian integration. How do I turn it on?
 
-Run `/dex-obsidian-setup` in your Dex session.
+Run `/dex-obsidian-setup` in your sw_os session.
 
 This will convert your vault to use **WikiLinks** - the `[[double bracket]]` format that Obsidian uses to connect notes. Once enabled:
 
-- **Everything links together** - When Dex mentions a person, project, or meeting, it automatically creates clickable links to the relevant pages
+- **Everything links together** - When sw_os mentions a person, project, or meeting, it automatically creates clickable links to the relevant pages
 - **Graph view works** - See how all your knowledge connects visually in Obsidian's graph view
 - **Click-through navigation** - Jump from a meeting note to a person page to their company page with single clicks
 - **Backlinks appear** - See everywhere a person or project is mentioned across your vault
@@ -63,13 +63,13 @@ The migration is safe to run on existing vaults - it scans your files and conver
 
 <!-- 
 Future topics to cover:
-- How does Dex differ from vanilla Obsidian?
-- What data does Dex/Claude have access to?
-- Can I use Dex without Obsidian?
+- How does sw_os differ from vanilla Obsidian?
+- What data does sw_os/Claude have access to?
+- Can I use sw_os without Obsidian?
 - How do I back up my vault?
-- What happens if I stop using Dex?
+- What happens if I stop using sw_os?
 - Is my data sent to Anthropic?
-- How do I customize Dex for my workflow?
+- How do I customize sw_os for my workflow?
 - Can I share my vault with my team?
-- What's the difference between Dex and [competitor]?
+- What's the difference between sw_os and [competitor]?
 -->

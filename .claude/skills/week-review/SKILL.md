@@ -414,7 +414,7 @@ At the end of the weekly review, surface the top backlog ideas:
 3. Include in the output format as a section:
 
 ```markdown
-## 🤖 Top 3 Dex Improvement Ideas
+## 🤖 Top 3 sw_os Improvement Ideas
 
 Your AI-curated backlog has surfaced these high-impact ideas:
 
@@ -477,7 +477,7 @@ After synthesis:
 |-------------|------------|------------|
 | Work | dex-work-mcp | `list_tasks`, `get_week_progress`, `get_quarterly_goals`, `get_goal_status` |
 | Calendar | dex-calendar-mcp | `calendar_get_events_with_attendees` |
-| Improvements | dex-improvements-mcp | `list_ideas` |
+| Improvements | sw_os-improvements-mcp | `list_ideas` |
 | Analytics | dex-analytics | `track_event` |
 
 ---

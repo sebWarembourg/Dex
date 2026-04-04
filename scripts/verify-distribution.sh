@@ -1,10 +1,10 @@
 #!/bin/bash
 # Distribution Safety Check
-# Run this before pushing Dex to GitHub to verify no credentials or personal data
+# Run this before pushing sw_os to GitHub to verify no credentials or personal data
 
 set -e
 
-echo "🔍 Dex Distribution Safety Check"
+echo "🔍 sw_os Distribution Safety Check"
 echo "================================="
 echo ""
 

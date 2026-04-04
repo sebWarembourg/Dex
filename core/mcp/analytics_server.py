@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dex Analytics MCP Server
+sw_os Analytics MCP Server
 
 Fires events to Pendo Track Events API for product analytics.
 Privacy-first: Only fires when user has opted in via consent flow.
@@ -17,7 +17,7 @@ import hashlib
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(os.path.join(os.path.dirname(__file__), '..', '..')))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -86,7 +86,7 @@ async def list_tools():
     return [
         Tool(
             name="track_event",
-            description="Track a Dex usage event. Only fires if user has opted into analytics.",
+            description="Track a sw_os usage event. Only fires if user has opted into analytics.",
             inputSchema={
                 "type": "object",
                 "properties": {

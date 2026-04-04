@@ -37,7 +37,7 @@
 - `project-health` - Check project status
 - `product-brief` - Create PRD through questions
 
-**Dex System Improvements (3):**
+**sw_os System Improvements (3):**
 - `dex-level-up` - Discover unused features
 - `dex-backlog` - Review improvement ideas
 - `dex-improve` - Workshop improvements
@@ -87,7 +87,7 @@
 Updated these files to reference `.claude/skills/`:
 - ✅ `CLAUDE.md` - Main system docs
 - ✅ `CHANGELOG.md` - Migration entry
-- ✅ `06-Resources/Dex_System/Dex_System_Guide.md` - System guide
+- ✅ `06-Resources/sw_os_System/Dex_System_Guide.md` - System guide
 - ✅ `.claude/skills/dex-improve/SKILL.md` - Self-reference
 - ✅ `.claude/skills/dex-backlog/SKILL.md` - Self-reference
 - ✅ `.claude/skills/dex-level-up/SKILL.md` - Self-reference
