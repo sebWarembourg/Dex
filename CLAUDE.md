@@ -176,7 +176,7 @@ Invoked with `/skill-name`. Active skills:
 `/triage`, `/meeting-prep`, `/process-meetings`
 
 **Product work:**
-`/product-brief`, `/project-health`
+`/product-brief`, `/project-health`, `/prioritize`, `/decision-doc`
 
 **Career:**
 `/career-coach`, `/career-setup`, `/resume-builder`
