@@ -490,7 +490,7 @@ ${meeting.transcript.slice(0, 5000)}${meeting.transcript.length > 5000 ? '\n\n[T
 ` : ''}
 
 ---
-*Processed by Dex Meeting Intel (Gemini 3 Pro)*
+*Processed by sw_os Meeting Intel (Gemini 3 Pro)*
 `;
 
   fs.writeFileSync(filepath, content);
@@ -587,7 +587,7 @@ async function main() {
   const force = args.includes('--force');
   
   log('='.repeat(60));
-  log('Dex Meeting Intel - Granola Sync');
+  log('sw_os Meeting Intel - Granola Sync');
   log('='.repeat(60));
   
   // Load configuration

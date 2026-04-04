@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Dex Analytics Helper
+sw_os Analytics Helper
 
-Shared utilities for analytics across Dex skills and MCPs.
+Shared utilities for analytics across sw_os skills and MCPs.
 Handles consent checking, journey metadata calculation, and event firing.
 
 Privacy Principles:
-- Only tracks Dex built-in features, not user customizations
+- Only tracks sw_os built-in features, not user customizations
 - Tracks THAT features were used, not WHAT users did with them
 - Never sends content, names, notes, or conversations
 
@@ -32,7 +32,7 @@ except ImportError:
 PENDO_ENDPOINT = "https://app.pendo.io/data/track"
 
 # Bundled Pendo Track Event secret (write-only - can only send events, cannot read data)
-# This enables anonymous feature tracking for Dex users who opt in
+# This enables anonymous feature tracking for sw_os users who opt in
 PENDO_TRACK_SECRET = "9b69df0b-ed13-4fed-925d-265243eef113"
 
 
@@ -170,7 +170,7 @@ def calculate_journey_metadata() -> Dict[str, Any]:
         ],
         'discovery': [
             'Feature discovery', 'What\'s new', 'Backlog review', 
-            'Improvement workshop', 'Idea captured', 'Dex updated', 'Learnings reviewed'
+            'Improvement workshop', 'Idea captured', 'sw_os updated', 'Learnings reviewed'
         ],
         'integrations': [
             'Calendar connected', 'Calendar synced', 'Granola connected',

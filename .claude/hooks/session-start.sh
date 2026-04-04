@@ -1,7 +1,7 @@
 #!/bin/bash
 # Claude Code SessionStart Hook
 # Injects strategic hierarchy and tactical context
-# For Dex personal knowledge system
+# For sw_os personal knowledge system
 
 CLAUDE_DIR="$CLAUDE_PROJECT_DIR"
 PILLARS_FILE="$CLAUDE_DIR/System/pillars.yaml"
@@ -13,7 +13,7 @@ MISTAKES_FILE="$LEARNINGS_DIR/Mistake_Patterns.md"
 PREFERENCES_FILE="$LEARNINGS_DIR/Working_Preferences.md"
 ONBOARDING_MARKER="$CLAUDE_DIR/System/.onboarding-complete"
 
-echo "=== Dex Session Context ==="
+echo "=== sw_os Session Context ==="
 echo ""
 echo "📅 Today: $(date '+%A, %B %d, %Y')"
 echo ""
@@ -185,7 +185,7 @@ if [[ -f "$ONBOARDING_MARKER" ]]; then
     fi
 fi
 
-# 11. Dex Health System — Pre-flight checks and error queue
+# 11. sw_os Health System — Pre-flight checks and error queue
 # Runs preflight health checks (MCP servers, config files, etc.) and displays
 # any queued errors. Silent when everything is healthy (no output = no display).
 if [[ -f "$ONBOARDING_MARKER" ]]; then

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Dex Safety Guard — PreToolUse hook for Bash commands
+# sw_os Safety Guard — PreToolUse hook for Bash commands
 # Blocks destructive commands before execution.
 # Exit 0 = allow, Exit 2 = block
 

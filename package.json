@@ -1,7 +1,7 @@
 {
   "name": "dex-pkm",
   "version": "1.0.0",
-  "description": "Dex - Personal Knowledge Management System",
+  "description": "sw_os - Personal Operating System for PMs",
   "private": true,
   "scripts": {
     "meeting-sync": "node .scripts/meeting-intel/sync-from-granola.cjs",

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Reference formatting utilities for Dex
+Reference formatting utilities for sw_os
 Handles conditional wiki link formatting based on obsidian_mode
 """
 import os

@@ -2,7 +2,7 @@
 """
 Google Workspace Integration Setup
 
-Guides users through connecting Google Workspace (Gmail, Calendar, Contacts) to Dex.
+Guides users through connecting Google Workspace (Gmail, Calendar, Contacts) to sw_os.
 Uses mcp-google package with OAuth flow.
 """
 
@@ -48,13 +48,13 @@ def get_setup_instructions() -> str:
     return """
 ## Setting Up Google Workspace Integration
 
-This connects Gmail, Calendar, and Contacts to Dex. Setup takes ~5 minutes.
+This connects Gmail, Calendar, and Contacts to sw_os. Setup takes ~5 minutes.
 
 ### Step 1: Create a Google Cloud Project
 
 1. Go to [console.cloud.google.com](https://console.cloud.google.com)
 2. Click the project dropdown (top left) → **"New Project"**
-3. Name it "Dex" → Click **Create**
+3. Name it "sw_os" → Click **Create**
 4. Wait for project creation, then select it
 
 ### Step 2: Enable APIs
@@ -71,7 +71,7 @@ In your new project:
 1. Go to **"APIs & Services"** → **"OAuth consent screen"**
 2. Choose **"External"** → Click **Create**
 3. Fill in:
-   - App name: "Dex"
+   - App name: "sw_os"
    - User support email: (your email)
    - Developer contact: (your email)
 4. Click **Save and Continue**
@@ -87,7 +87,7 @@ In your new project:
 1. Go to **"APIs & Services"** → **"Credentials"**
 2. Click **"+ Create Credentials"** → **"OAuth client ID"**
 3. Application type: **"Desktop app"**
-4. Name: "Dex Desktop"
+4. Name: "sw_os Desktop"
 5. Click **Create**
 6. Click **"Download JSON"** (saves as `client_secret_xxx.json`)
 
@@ -149,7 +149,7 @@ def install(credentials_json: str, credentials_path: Optional[str] = None) -> Tu
     
     save_claude_config(config)
     
-    # Save to Dex integrations config
+    # Save to sw_os integrations config
     dex_config_path = Path(os.environ.get("DEX_VAULT", ".")) / "System" / "integrations" / "google.yaml"
     dex_config_path.parent.mkdir(parents=True, exist_ok=True)
     
@@ -193,7 +193,7 @@ gmail:
 **Next Step: Authorize Access**
 
 When you first use a Google feature, you'll see an OAuth prompt in your browser.
-Click "Allow" to grant Dex read-only access to your Google data.
+Click "Allow" to grant sw_os read-only access to your Google data.
 
 **What you can do after authorization:**
 - "What emails am I behind on with [person]?" → Searches Gmail
@@ -224,7 +224,7 @@ def uninstall() -> Tuple[bool, str]:
 
 To also revoke Google's authorization:
 Visit [myaccount.google.com/permissions](https://myaccount.google.com/permissions)
-and remove "Dex" from the list."""
+and remove "sw_os" from the list."""
     
     return False, "Google integration was not configured."
 

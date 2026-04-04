@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Dex Update Checker MCP Server
+sw_os Update Checker MCP Server
 
-Checks for Dex updates from GitHub and notifies users of new versions.
-Writes a persistent .update-available file so Dex can remind users once
+Checks for sw_os updates from GitHub and notifies users of new versions.
+Writes a persistent .update-available file so sw_os can remind users once
 per day across multiple chat sessions.
 """
 
@@ -18,13 +18,13 @@ from mcp.server.fastmcp import FastMCP
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
 
 # Initialize MCP server
-mcp = FastMCP("Dex Update Checker")
+mcp = FastMCP("sw_os Update Checker")
 
 # Mark healthy on import (FastMCP servers start on import)
 if _HAS_HEALTH:
@@ -205,7 +205,7 @@ def compare_versions(current: str, latest: str) -> str:
 @mcp.tool()
 async def check_for_updates(force: bool = False) -> dict:
     """
-    Check if a newer version of Dex is available on GitHub.
+    Check if a newer version of sw_os is available on GitHub.
 
     Args:
         force: If True, check even if checked recently. Default: False

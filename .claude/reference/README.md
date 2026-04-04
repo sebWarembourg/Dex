@@ -1,16 +1,16 @@
 # Reference
 
-**Purpose:** Technical documentation for developers and advanced users working on Dex internals.
+**Purpose:** Technical documentation for developers and advanced users working on sw_os internals.
 
-**⚠️ For Technical Users** - This folder contains architecture docs, implementation details, and integration guides. If you're just using Dex, you don't need to read these files.
+**⚠️ For Technical Users** - This folder contains architecture docs, implementation details, and integration guides. If you're just using sw_os, you don't need to read these files.
 
 ---
 
 ## What Is Reference Documentation?
 
-**Reference docs** are technical guides that explain *how* and *why* Dex works under the hood. These are for:
+**Reference docs** are technical guides that explain *how* and *why* sw_os works under the hood. These are for:
 - Claude when implementing new features
-- Developers extending Dex
+- Developers extending sw_os
 - Advanced users debugging issues
 - Contributors understanding the architecture
 
@@ -33,7 +33,7 @@ Claude reads reference docs when:
 - Setting up integrations (MCP servers, external APIs)
 
 **Example scenario:**
-- User: "Add Slack integration to Dex"
+- User: "Add Slack integration to sw_os"
 - Claude reads: `mcp-servers.md` to understand MCP patterns
 - Claude reads: `System/user-profile.yaml` to understand configuration
 - Claude implements: New Slack MCP server following established patterns
@@ -60,7 +60,7 @@ Create reference docs for:
 
 Reference docs are for:
 - Claude when implementing features
-- Developers extending Dex
+- Developers extending sw_os
 - Advanced users customizing their setup
 - Contributors debugging issues
 

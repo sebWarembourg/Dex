@@ -63,7 +63,7 @@ def check_new_integrations_available() -> Tuple[bool, str]:
 
 def check_upgradeable_integrations() -> Tuple[bool, str]:
     """
-    Check if user has integrations that could be upgraded to Dex recommended.
+    Check if user has integrations that could be upgraded to sw_os recommended.
     Returns (has_upgrades, announcement_text).
     """
     result = detect_all_integrations()
@@ -73,7 +73,7 @@ def check_upgradeable_integrations() -> Tuple[bool, str]:
     
     lines = ["## 🔄 Integration Upgrade Available"]
     lines.append("")
-    lines.append("You have some integrations that could be upgraded to Dex recommended packages:")
+    lines.append("You have some integrations that could be upgraded to sw_os recommended packages:")
     lines.append("")
     
     for service, status in [("Notion", result["notion"]), 

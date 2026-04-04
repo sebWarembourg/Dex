@@ -26,7 +26,7 @@ class DetectionResult(TypedDict):
     any_installed: bool
     any_upgradeable: bool
 
-# Dex recommended packages
+# sw_os recommended packages
 RECOMMENDED = {
     "notion": {
         "package": "@notionhq/notion-mcp-server",
@@ -140,10 +140,10 @@ def detect_integration(service: str, config: dict) -> IntegrationStatus:
             if not result["package"]:
                 result["package"] = server_name
     
-    # Add recommendation if not using Dex recommended
+    # Add recommendation if not using sw_os recommended
     if result["installed"] and not result["is_dex_recommended"] and recommended:
         rec = RECOMMENDED[service]
-        result["recommendation"] = f"Dex recommends {rec['name']} ({rec['package']}): {', '.join(rec['benefits'])}"
+        result["recommendation"] = f"sw_os recommends {rec['name']} ({rec['package']}): {', '.join(rec['benefits'])}"
     
     return result
 
@@ -187,7 +187,7 @@ def format_detection_report(result: DetectionResult) -> str:
             lines.append(f"### {emoji} {service}")
             lines.append(f"- **Installed:** {status['package']}")
             if status["is_dex_recommended"]:
-                lines.append("- **Status:** Using Dex recommended package")
+                lines.append("- **Status:** Using sw_os recommended package")
             else:
                 lines.append(f"- **Recommendation:** {status['recommendation']}")
         else:

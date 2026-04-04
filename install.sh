@@ -1,10 +1,10 @@
 #!/bin/bash
-# Dex PKM - Installation Script
+# sw_os PKM - Installation Script
 # This script sets up your development environment
 
 set -e
 
-echo "🚀 Setting up Dex..."
+echo "🚀 Setting up sw_os..."
 echo ""
 
 # Check for Command Line Tools on macOS (required for git)
@@ -290,7 +290,7 @@ if [ "$EDITOR_DETECTED" == "Cursor" ]; then
             echo ""
             echo "   ⚠️  WARNING: Cursor $CURSOR_VERSION detected (skills require 2.4+)"
             echo ""
-            echo "   Dex skills won't work until you upgrade Cursor!"
+            echo "   sw_os skills won't work until you upgrade Cursor!"
             echo "   Skills like /setup, /daily-plan, etc. require Cursor 2.4 or later."
             echo ""
             echo "   To upgrade: Cursor menu → Check for Updates"
@@ -322,7 +322,7 @@ fi
 # Success
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "✅ Dex installation complete!"
+echo "✅ sw_os installation complete!"
 echo ""
 echo "Status:"
 echo "  • Node.js: ✅ Working"
@@ -331,7 +331,7 @@ echo "  • Editor: ${EDITOR_DETECTED:-Claude Code}"
 if [[ "$WORK_MCP_STATUS" == *"Needs"* ]]; then
     echo ""
     echo "⚠️  IMPORTANT: Work MCP enables task sync across all files."
-    echo "   Without it, Dex works but tasks won't sync automatically."
+    echo "   Without it, sw_os works but tasks won't sync automatically."
     echo "   See troubleshooting above to fix."
 fi
 echo ""
@@ -340,10 +340,10 @@ if [ "$EDITOR_DETECTED" == "Cursor" ]; then
     echo "  1. Make sure you're on Cursor 2.4+ for best experience"
     echo "  2. In Cursor chat, type: /setup"
     echo "  3. Answer the setup questions (~5 minutes)"
-    echo "  4. Start using Dex!"
+    echo "  4. Start using sw_os!"
 else
     echo "  1. In chat, type: /setup"
     echo "  2. Answer the setup questions (~5 minutes)"
-    echo "  3. Start using Dex!"
+    echo "  3. Start using sw_os!"
 fi
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

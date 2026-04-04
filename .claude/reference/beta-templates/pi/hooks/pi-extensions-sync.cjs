@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * SessionStart hook: Sync Pi-built extensions into Dex's skill system
+ * SessionStart hook: Sync Pi-built extensions into sw_os's skill system
  *
  * Scans .pi/extensions/ for TypeScript extensions and:
  * 1. Parses metadata (name, description, tools, commands)
@@ -139,7 +139,7 @@ function parseExtension(filePath) {
 }
 
 /**
- * Generate a Dex skill stub for a Pi extension
+ * Generate a sw_os skill stub for a Pi extension
  */
 function generateSkillStub(extension) {
   const toolsList = extension.tools.map(t =>
@@ -178,16 +178,16 @@ last_synced: ${new Date().toISOString()}
 # Pi Extension: ${extension.name}
 
 > **Note:** This skill was auto-generated from \`.pi/extensions/${extension.id}.ts\`
-> It provides access to Pi tools within the Dex environment.
+> It provides access to Pi tools within the sw_os environment.
 
 ${extension.description || 'No description available.'}
 
 ${toolsSection}${commandsSection}## How to Use
 
-This extension was built in Pi and synced to Dex. The tools are available to Pi but
-provide context for Dex about what capabilities exist in the Pi environment.
+This extension was built in Pi and synced to sw_os. The tools are available to Pi but
+provide context for sw_os about what capabilities exist in the Pi environment.
 
-### From Dex
+### From sw_os
 
 Reference this extension when discussing Pi capabilities:
 - ${usageExamples || `The ${extension.name} extension provides specialized functionality`}

@@ -1,6 +1,6 @@
 # Demo Scenarios Reference
 
-12 validated scenarios demonstrating Dex capabilities using Alex Chen's demo content.
+12 validated scenarios demonstrating sw_os capabilities using Alex Chen's demo content.
 
 ---
 

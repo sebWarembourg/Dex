@@ -4,7 +4,7 @@ System improvements discovered during work sessions.
 
 ## What Goes Here
 
-Meta-feedback about Dex itself, captured during `/review`:
+Meta-feedback about sw_os itself, captured during `/review`:
 
 - **Mistakes or corrections** — Things that went wrong and how to fix them
 - **Preferences mentioned** — Workflow preferences you shared
@@ -30,10 +30,10 @@ Each learning includes:
 3. **Implement** — Fix documentation gaps or system issues
 4. **Update status** — Mark as implemented when done
 
-## vs. Dex Backlog
+## vs. sw_os Backlog
 
 **Session Learnings** = specific bugs or doc gaps discovered  
-**Dex Backlog** = feature ideas and improvements (in `System/Dex_Backlog.md`)
+**sw_os Backlog** = feature ideas and improvements (in `System/Dex_Backlog.md`)
 
 Both feed into system improvements, but learnings are reactive (fixing issues) while the backlog is proactive (new capabilities).
 
@@ -41,6 +41,6 @@ Both feed into system improvements, but learnings are reactive (fixing issues) w
 
 - `/dex-whats-new` checks for pending learnings
 - Weekly reviews surface unaddressed learnings
-- Helps Dex evolve based on actual usage patterns
+- Helps sw_os evolve based on actual usage patterns
 
-This enables Dex to learn from your usage and improve over time.
+This enables sw_os to learn from your usage and improve over time.

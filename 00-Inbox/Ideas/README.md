@@ -20,9 +20,9 @@ Quick thoughts and ideas to process later.
 2. **Triage** — Run `/triage` to process and organize
 3. **Move** — Actionable ideas become tasks or projects, reference ideas move to 06-Resources/
 
-## Dex System Ideas
+## sw_os System Ideas
 
-For ideas about improving Dex itself, you can use the `capture_idea` MCP tool which saves to `System/Dex_Backlog.md` and runs AI ranking. Then use `/dex-backlog` to review priorities.
+For ideas about improving sw_os itself, you can use the `capture_idea` MCP tool which saves to `System/Dex_Backlog.md` and runs AI ranking. Then use `/dex-backlog` to review priorities.
 
 ## Tips
 

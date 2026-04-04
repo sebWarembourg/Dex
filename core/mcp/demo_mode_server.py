@@ -33,7 +33,7 @@ import mcp.types as types
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -53,7 +53,7 @@ MIN_TERM_LENGTH = 3
 DEFAULT_ALLOWLIST = {
     'Dave', 'Killeen', 'Dave Killeen',
     'Pendo',
-    'Dex',
+    'sw_os',
     'Claude', 'Anthropic', 'Claude Code', 'Cursor', 'Obsidian',
     'Aakash', 'Gupta', 'Aakash Gupta',
     'README', 'CLAUDE', 'Active', 'System', 'Demo',

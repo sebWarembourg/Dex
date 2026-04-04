@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Dex Plugin Validation Script
+# sw_os Plugin Validation Script
 # Run this before publishing to catch common issues
 
 set -e  # Exit on error
 
-echo "🔍 Validating Dex Plugin..."
+echo "🔍 Validating sw_os Plugin..."
 echo ""
 
 # Colors for output
@@ -93,7 +93,7 @@ MCP_SERVERS=(
     "core/mcp/resume_server.py"
     "core/mcp/onboarding_server.py"
     "core/mcp/beta_server.py"
-    "core/mcp/dex_improvements_server.py"
+    "core/mcp/sw_os_improvements_server.py"
     "core/mcp/commitment_server.py"
     "core/mcp/granola_server.py"
 )

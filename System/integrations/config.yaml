@@ -1,4 +1,4 @@
-# Dex Productivity Integrations Config
+# sw_os Productivity Integrations Config
 # This file tracks which integrations are enabled and their settings
 
 # Last updated: (auto-updated when integrations change)
@@ -15,7 +15,7 @@ enabled:
 # - slack.yaml (Slack-specific config)
 # - google.yaml (Google-specific config)
 
-# Integration hooks - which Dex features use integrations
+# Integration hooks - which sw_os features use integrations
 hooks:
   meeting_prep:
     use_notion: true      # Pull relevant Notion docs

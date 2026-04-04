@@ -1,1 +1,1 @@
-"""Obsidian integration utilities for Dex"""
+"""Obsidian integration utilities for sw_os"""

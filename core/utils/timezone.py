@@ -1,5 +1,5 @@
 """
-Timezone utilities for Dex MCP servers.
+Timezone utilities for sw_os MCP servers.
 
 Provides timezone-aware now() and today() that respect the user's
 configured timezone in user-profile.yaml, falling back to system local time.

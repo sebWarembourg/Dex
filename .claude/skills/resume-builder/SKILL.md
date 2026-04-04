@@ -704,7 +704,7 @@ Let me know what changes you'd like.
 
 ---
 
-## Integration with Dex System
+## Integration with sw_os System
 
 ### Career Evidence System
 
@@ -919,7 +919,7 @@ Before finalizing resume and LinkedIn profile, verify:
 
 **Before starting:**
 - Gather any performance reviews or feedback that mention achievements
-- Check if you have career evidence already captured in Dex
+- Check if you have career evidence already captured in sw_os
 - Think about your target role (influences how you position achievements)
 - Have job descriptions handy if tailoring for specific opportunities
 
@@ -935,7 +935,7 @@ Before finalizing resume and LinkedIn profile, verify:
 - Keep the LinkedIn profile updated as you progress
 - Come back to update as you accomplish new things
 
-### For Dex
+### For sw_os
 
 **Be persistent:**
 - Don't accept "I improved things" without metrics
@@ -975,7 +975,7 @@ Before finalizing resume and LinkedIn profile, verify:
 
 **User:** `/resume-builder I need to update my resume for senior PM roles`
 
-**Dex:**
+**sw_os:**
 
 ```markdown
 ## Resume & LinkedIn Profile Builder
@@ -993,7 +993,7 @@ Which would you prefer?
 
 **User:** "Start from scratch"
 
-**Dex:**
+**sw_os:**
 
 ```markdown
 ## Your Professional Roles
@@ -1011,7 +1011,7 @@ When you've listed all your roles, type "DONE WITH ROLES"
 
 **User:** [Lists 4 roles]
 
-**Dex:** [Confirms roles, moves to achievement extraction]
+**sw_os:** [Confirms roles, moves to achievement extraction]
 
 ```markdown
 ## Role: Senior Product Manager at TechCo

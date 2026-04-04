@@ -212,7 +212,7 @@ ${changes.latestVersion ? `**Latest version:** ${changes.latestVersion}\n` : ''}
 
 Run \`/dex-whats-new\` to:
 - See what's new since your last check
-- Get specific suggestions for how to use new features in Dex
+- Get specific suggestions for how to use new features in sw_os
 - Update your tracking state
 
 This file will be deleted once you run the command.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Migrate existing Dex vault to Obsidian wiki link format
+Migrate existing sw_os vault to Obsidian wiki link format
 Zero AI tokens - pure regex pattern matching
 """
 import os
@@ -122,7 +122,7 @@ def estimate_migration(files: List[Path]) -> str:
 
 def migrate_vault(dry_run: bool = False):
     """Main migration function"""
-    print("Dex Obsidian Migration\n" + "="*50)
+    print("sw_os Obsidian Migration\n" + "="*50)
     
     # Build indices
     print("Building indices...")
@@ -185,7 +185,7 @@ def migrate_vault(dry_run: bool = False):
         # macOS notification
         os.system(f'''
             osascript -e 'display notification "{files_modified} files converted with wiki links" 
-            with title "Dex Obsidian Migration Complete" sound name "Glass"'
+            with title "sw_os Obsidian Migration Complete" sound name "Glass"'
         ''')
         
         # Sound

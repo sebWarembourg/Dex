@@ -1,4 +1,4 @@
-# Dex Plugin - Ready to Publish Checklist
+# sw_os Plugin - Ready to Publish Checklist
 
 **Status: 🟡 Almost Ready - See Action Items Below**
 
@@ -15,7 +15,7 @@
 - [x] 60+ Skills in `.claude/skills/`
 - [x] 9 MCP Servers in `.claude/mcp/` and `core/mcp/`
 - [x] Session hooks in `.claude/hooks/`
-- [x] Comprehensive documentation in `06-Resources/Dex_System/`
+- [x] Comprehensive documentation in `06-Resources/sw_os_System/`
 - [x] LICENSE file (PolyForm Noncommercial 1.0.0)
 - [x] CHANGELOG.md (detailed version history)
 - [x] README.md (comprehensive overview)
@@ -81,7 +81,7 @@
    ## Installation
 
    ```bash
-   # Install Dex as a Claude Code plugin
+   # Install sw_os as a Claude Code plugin
    claude plugin install https://github.com/YOUR-USERNAME/dex
 
    # Install Python dependencies
@@ -132,7 +132,7 @@
 9. **Create GitHub Release**
    - Go to GitHub → Releases → "Create a new release"
    - Tag: v1.0.0
-   - Title: "Dex 1.0 - Your AI Chief of Staff"
+   - Title: "sw_os 1.0 - Your AI Chief of Staff"
    - Description: Copy from your main README intro
    - Attach: Installation quick start guide
    - Mark as "Latest release"
@@ -174,7 +174,7 @@
     # Push to GitHub
     git init
     git add .
-    git commit -m "Dex marketplace"
+    git commit -m "sw_os marketplace"
     git remote add origin https://github.com/YOUR-USERNAME/dex-marketplace.git
     git push -u origin main
     ```
@@ -293,7 +293,7 @@ Once published, promote via:
 - [ ] Email to newsletter subscribers
 
 ### Week 2: Content
-- [ ] Blog post: "Dex is now a Claude Code plugin"
+- [ ] Blog post: "sw_os is now a Claude Code plugin"
 - [ ] Blog post: "How to build a Claude Code plugin"
 - [ ] YouTube: Extended demo/walkthrough
 
@@ -303,7 +303,7 @@ Once published, promote via:
 - [ ] Post in PKM/Productivity communities
 
 ### Week 4: Podcast Episode
-- [ ] Record "Building Dex as a Plugin" episode
+- [ ] Record "Building sw_os as a Plugin" episode
 - [ ] Discuss lessons learned
 - [ ] Demo the installation process
 
@@ -312,10 +312,10 @@ Once published, promote via:
 If you want to monetize later:
 
 1. **Free Core + Premium Features**
-   - Current Dex: Free
+   - Current sw_os: Free
    - Premium: Advanced integrations, team features
 
-2. **Dex Pro Marketplace**
+2. **sw_os Pro Marketplace**
    - Separate premium plugins
    - Salesforce/HubSpot integrations
    - Advanced analytics
@@ -353,7 +353,7 @@ If you want to monetize later:
 
 ---
 
-**You're 90% there!** The hard work (building Dex) is done. Now it's just packaging and distribution.
+**You're 90% there!** The hard work (building sw_os) is done. Now it's just packaging and distribution.
 
 Focus on getting a few beta users first, then expand distribution as you get feedback.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Page generation utilities for Dex
+Page generation utilities for sw_os
 Creates person pages, meeting notes, and other content with proper reference formatting
 """
 from typing import Optional, List

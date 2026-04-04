@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MCP Server for Dex Session Memory System
+MCP Server for sw_os Session Memory System
 Exposes conversation intelligence from the dex-app SQLite DB to Cursor/CLI.
 
 Read-only access to:
@@ -40,7 +40,7 @@ DB_PATH = BASE_DIR / 'System' / '.dex-sessions.db'
 def get_db() -> sqlite3.Connection:
     """Open a read-only WAL-mode connection to the sessions DB."""
     if not DB_PATH.exists():
-        raise FileNotFoundError(f"Sessions DB not found at {DB_PATH}. Start the Dex app first to create it.")
+        raise FileNotFoundError(f"Sessions DB not found at {DB_PATH}. Start the sw_os app first to create it.")
 
     conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
     conn.row_factory = sqlite3.Row
@@ -456,7 +456,7 @@ async def handle_list_tools() -> list[types.Tool]:
         types.Tool(
             name="search_sessions",
             description=(
-                "Search across Dex app conversation sessions and messages using full-text search. "
+                "Search across sw_os app conversation sessions and messages using full-text search. "
                 "Progressive disclosure: default returns ~50 tokens/result (Layer 1: names + summaries). "
                 "Add include_full=true for ~500 tokens/result (Layer 3: recent messages). "
                 "Use include_messages=false for session-only search."
@@ -579,8 +579,8 @@ async def handle_list_tools() -> list[types.Tool]:
         types.Tool(
             name="search_observations",
             description=(
-                "Search observations (tool calls, decisions, insights) logged during Dex app sessions. "
-                "Observations capture what Dex actually did: files written, tasks created, decisions made."
+                "Search observations (tool calls, decisions, insights) logged during sw_os app sessions. "
+                "Observations capture what sw_os actually did: files written, tasks created, decisions made."
             ),
             inputSchema={
                 "type": "object",
@@ -611,7 +611,7 @@ async def handle_list_tools() -> list[types.Tool]:
             name="get_observation_timeline",
             description=(
                 "Get a chronological timeline of observations related to an entity. "
-                "Shows what Dex has done involving this person, company, or project."
+                "Shows what sw_os has done involving this person, company, or project."
             ),
             inputSchema={
                 "type": "object",
@@ -632,7 +632,7 @@ async def handle_list_tools() -> list[types.Tool]:
         types.Tool(
             name="get_recent_tool_usage",
             description=(
-                "See what tools Dex has used recently in the app. "
+                "See what tools sw_os has used recently in the app. "
                 "Useful for understanding what actions were taken and when."
             ),
             inputSchema={
@@ -732,7 +732,7 @@ async def handle_call_tool(name: str, arguments: dict | None) -> list[types.Text
     except FileNotFoundError as e:
         return [types.TextContent(type="text", text=json.dumps({
             "error": str(e),
-            "hint": "The Dex app creates this database. Start the app and have at least one conversation first."
+            "hint": "The sw_os app creates this database. Start the app and have at least one conversation first."
         }))]
     except Exception as e:
         logger.error(f"Error in {name}: {e}")
@@ -744,7 +744,7 @@ async def handle_call_tool(name: str, arguments: dict | None) -> list[types.Text
 # ---------------------------------------------------------------------------
 
 async def _main():
-    logger.info("Starting Dex Session Memory MCP Server")
+    logger.info("Starting sw_os Session Memory MCP Server")
     logger.info(f"Vault path: {BASE_DIR}")
     logger.info(f"DB path: {DB_PATH}")
     logger.info(f"DB exists: {DB_PATH.exists()}")

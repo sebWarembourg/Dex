@@ -702,7 +702,7 @@ At any phase, users can:
 - The questions will extract what's in your head
 - You can always revise and refine
 
-### For Dex
+### For sw_os
 - Listen for what's NOT being said
 - If scope sounds too big, flag it early
 - Connect this feature to their strategic pillars if relevant
@@ -715,7 +715,7 @@ At any phase, users can:
 
 **User:** `/product-brief Add notifications to our app`
 
-**Dex:**
+**sw_os:**
 
 ```markdown
 ## Initial Idea
@@ -733,7 +733,7 @@ Great, let's flesh this out. A few questions to start:
 
 **User:** "Push notifications for now. We want to notify sales reps when a lead takes an action in the product."
 
-**Dex:**
+**sw_os:**
 
 ```markdown
 Got it — push notifications for sales reps when leads are active. That helps narrow it.
@@ -749,7 +749,7 @@ A few more questions:
 
 ---
 
-## Integration with Dex System
+## Integration with sw_os System
 
 - **Pillars:** Link PRD to relevant strategic pillar
 - **Quarter Goals:** If this supports a quarterly goal, note it
@@ -782,7 +782,7 @@ The PRD isn't set in stone. After creation:
 - Say "add a section on localization" to expand
 - Say "this scope is too big, help me cut it down" to trim
 
-Dex will update the PRD file directly and maintain version history.
+sw_os will update the PRD file directly and maintain version history.
 
 ---
 

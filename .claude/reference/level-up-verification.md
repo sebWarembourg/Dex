@@ -32,7 +32,7 @@ These commands have explicit tracking steps added:
 
 ### 2. System Behavior (CLAUDE.md Guidance)
 
-CLAUDE.md (lines 173-186) instructs Dex to track usage automatically:
+CLAUDE.md (lines 173-186) instructs sw_os to track usage automatically:
 
 > **Usage Tracking (Silent)**
 > Track feature adoption in `System/usage_log.md` to power `/dex-level-up` recommendations:
@@ -218,9 +218,9 @@ Recommendations:
 
 Recommendations:
 1. **Custom MCP Integration** - Automate CRM sync
-2. **System Customization** - Make Dex yours
+2. **System Customization** - Make sw_os yours
 
-Celebration message: "You're using Dex like a pro! 🎉"
+Celebration message: "You're using sw_os like a pro! 🎉"
 
 **Verification Steps:**
 1. System recognizes power user status (21+ features checked)
@@ -310,7 +310,7 @@ Celebration message: "You're using Dex like a pro! 🎉"
 ### All Features Used
 
 **Expected:**
-- `/dex-level-up` shows celebration: "You're using every feature in Dex! 🎉"
+- `/dex-level-up` shows celebration: "You're using every feature in sw_os! 🎉"
 - Suggests custom MCPs, system improvements, sharing knowledge
 
 ### User Says "Show Me Everything"

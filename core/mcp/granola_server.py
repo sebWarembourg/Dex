@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Granola Meeting Notes MCP Server for Dex
+Granola Meeting Notes MCP Server for sw_os
 
 Primary: Uses Granola's unofficial API for complete data
 Fallback: Reads from local cache if API fails
@@ -91,7 +91,7 @@ VAULT_PATH = Path(os.environ.get('VAULT_PATH', Path.cwd()))
 try:
     import sys as _sys
     _sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -1168,7 +1168,7 @@ async def _main():
     """Async main entry point for the MCP server"""
     if _HAS_HEALTH:
         _mark_healthy("granola-mcp")
-    logger.info("Starting Dex Granola MCP Server (API-first with cache fallback)")
+    logger.info("Starting sw_os Granola MCP Server (API-first with cache fallback)")
     logger.info(f"API credentials: {GRANOLA_CREDS}")
     logger.info(f"Cache fallback: {GRANOLA_CACHE}")
     

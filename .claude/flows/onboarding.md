@@ -1,4 +1,4 @@
-# Dex Onboarding Flow
+# sw_os Onboarding Flow
 
 Guide new users through setup in a friendly ~5 minute conversation. Keep it simple, practical, and focused on getting them working quickly.
 
@@ -26,9 +26,9 @@ Remember this for the rest of onboarding. Every step that says "present options"
 
 ## Step 1: Welcome
 
-Say: "Welcome to Dex! I'm your personal knowledge assistant.
+Say: "Welcome to sw_os! I'm your personal knowledge assistant.
 
-**What Dex does:** I help you organize your professional life—meetings, projects, people, ideas, and tasks—all in markdown files you own. Think of me as your executive assistant who never forgets context.
+**What sw_os does:** I help you organize your professional life—meetings, projects, people, ideas, and tasks—all in markdown files you own. Think of me as your executive assistant who never forgets context.
 
 Let's get you set up. First, what's your name?"
 
@@ -299,11 +299,11 @@ Say: "One more thing—do you use **Obsidian** to view your notes?
 
 **What is Obsidian?** It's a free markdown editor with a graph view that shows connections between notes. Think of it like a visual map of your knowledge.
 
-**Why it matters for Dex:**
+**Why it matters for sw_os:**
 - **With Obsidian:** Your vault becomes a connected graph. Click any person, project, or meeting reference to navigate instantly.
-- **Without Obsidian:** You'll use Dex through Cursor or terminal, which works great but without clickable links.
+- **Without Obsidian:** You'll use sw_os through Cursor or terminal, which works great but without clickable links.
 
-**Obsidian is completely optional** - Dex works perfectly either way. Some people love the graph visualization, others prefer terminal/Cursor. Both are first-class experiences.
+**Obsidian is completely optional** - sw_os works perfectly either way. Some people love the graph visualization, others prefer terminal/Cursor. Both are first-class experiences.
 
 **New to Obsidian?** [Watch this beginner's guide](https://www.youtube.com/watch?v=gafuqdKwD_U) to see what it can do (5 min)."
 
@@ -326,7 +326,7 @@ Present options using your detected platform tool:
 **If YES (id: "yes"):**
 1. Set `obsidian_mode: true` in session data
 2. Say: "Great! I'll format all references as wiki links for easy navigation."
-3. Optional: "Want me to generate an Obsidian config optimized for Dex? (Recommended settings, hotkeys, etc.)"
+3. Optional: "Want me to generate an Obsidian config optimized for sw_os? (Recommended settings, hotkeys, etc.)"
 
 **If NO or LATER (id: "no" or "later"):**
 1. Set `obsidian_mode: false` in session data
@@ -346,7 +346,7 @@ Present options using your detected platform tool:
 
 Say: "Perfect! I'm creating your workspace now. Here's what you're getting:
 
-**Dex uses the PARA method:**
+**sw_os uses the PARA method:**
 - **04-Projects/** — Time-bound work with clear outcomes
 - **05-Areas/** — Ongoing responsibilities (People/, Career/, plus role-specific areas)
 - **06-Resources/** — Reference material (learnings, quarterly reviews, system docs)
@@ -534,24 +534,24 @@ Want to set up manual or automatic processing?"
 
 Say: "One quick question before we finish:
 
-**Dave could use your help improving Dex.** By sharing anonymous feature usage—things like 'ran /daily-plan' or 'created a task'—you help show what's working and what needs improvement.
+**Dave could use your help improving sw_os.** By sharing anonymous feature usage—things like 'ran /daily-plan' or 'created a task'—you help show what's working and what needs improvement.
 
-• **What's tracked:** Only Dex built-in features (not anything you customize or add)
+• **What's tracked:** Only sw_os built-in features (not anything you customize or add)
 • **What Dave never sees:** What you DO with features—just that you used them
 • **Never sent:** Your content, names, notes, conversations, or anything personal
 • **Your control:** You can change this anytime in System/user-profile.yaml
 
-**Help improve Dex?**"
+**Help improve sw_os?**"
 
 Present options using your detected platform tool:
 ```json
 {
   "questions": [{
     "id": "analytics_consent",
-    "prompt": "Share anonymous usage data to help improve Dex?",
+    "prompt": "Share anonymous usage data to help improve sw_os?",
     "allow_multiple": false,
     "options": [
-      {"id": "yes", "label": "Yes, help improve Dex"},
+      {"id": "yes", "label": "Yes, help improve sw_os"},
       {"id": "no", "label": "No thanks"}
     ]
   }]
@@ -570,7 +570,7 @@ Present options using your detected platform tool:
    - `Consent decision: opted-in`
    - `Consent date: YYYY-MM-DD`
 3. Fire `analytics_consent_given` event (first event!)
-4. Say: "Thanks! This really helps Dave make Dex better. 🙏"
+4. Say: "Thanks! This really helps Dave make sw_os better. 🙏"
 
 **If NO:**
 1. Update `System/user-profile.yaml`:
@@ -582,7 +582,7 @@ Present options using your detected platform tool:
    - `Consent asked: true`
    - `Consent decision: opted-out`
    - `Consent date: YYYY-MM-DD`
-3. Say: "No problem! Dex works exactly the same either way."
+3. Say: "No problem! sw_os works exactly the same either way."
 
 ---
 
@@ -665,13 +665,13 @@ Before the completion message, check if user is using Cursor < 2.4:
 
 Say: "⚠️ **Important: Cursor Version Update Needed**
 
-I noticed you're using Cursor [version]. Dex skills (like `/daily-plan`, `/meeting-prep`, etc.) require **Cursor 2.4 or later**.
+I noticed you're using Cursor [version]. sw_os skills (like `/daily-plan`, `/meeting-prep`, etc.) require **Cursor 2.4 or later**.
 
 **To update:**
 1. Cursor menu → Check for Updates, OR
 2. Download latest from [cursor.com](https://cursor.com)
 
-After updating, all Dex skills will work automatically. For now, you can continue setup, but skills won't appear in the `/` menu until you upgrade.
+After updating, all sw_os skills will work automatically. For now, you can continue setup, but skills won't appear in the `/` menu until you upgrade.
 
 [Continue with setup anyway] / [Pause and update Cursor first]"
 
@@ -698,7 +698,7 @@ I'm going to analyze your calendar and recent meetings to:
 • Show you what's on your plate this week
 • Get you oriented with quick wins
 
-This takes about 2 minutes and shows you what Dex can really do.
+This takes about 2 minutes and shows you what sw_os can really do.
 
 **Want me to run the getting started tour?** (Highly recommended)
 
@@ -714,7 +714,7 @@ This takes about 2 minutes and shows you what Dex can really do.
 
 **Trigger:** Either immediately after Step 9, OR at next session start if vault is < 7 days old.
 
-**Purpose:** Transform "I have a system, now what?" into immediate value and confidence. This is where the **dramatic reveal** happens - analyzing their calendar/Granola data and showing what Dex built automatically.
+**Purpose:** Transform "I have a system, now what?" into immediate value and confidence. This is where the **dramatic reveal** happens - analyzing their calendar/Granola data and showing what sw_os built automatically.
 
 **If yes (user wants to continue):** Run `/getting-started` skill (see `.claude/skills/getting-started/SKILL.md`)
 - The skill will check for `pre_analysis_deferred: true` flag in `.onboarding-complete`
@@ -759,7 +759,7 @@ Say: "No problem! You can set them up later with `/quarter-plan`."
 
 After all chosen post-onboarding features are set up (or skipped):
 
-Say: "All done! You're ready to use Dex. What would you like to work on first?"
+Say: "All done! You're ready to use sw_os. What would you like to work on first?"
 
 ## For Existing Notes
 
@@ -767,7 +767,7 @@ If user mentions they have existing notes, say: "Just copy them into the `00-Inb
 
 ## Viewing Your Notes
 
-Dex creates markdown files you can view with any app: VS Code, Cursor, Obsidian, or any text editor.
+sw_os creates markdown files you can view with any app: VS Code, Cursor, Obsidian, or any text editor.
 
 ---
 
