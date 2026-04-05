@@ -29,15 +29,6 @@ from mcp.server.models import InitializationOptions
 import mcp.server.stdio
 import mcp.types as types
 
-# Analytics helper (optional - gracefully degrade if not available)
-try:
-    from analytics_helper import fire_event as _fire_analytics_event
-    HAS_ANALYTICS = True
-except ImportError:
-    HAS_ANALYTICS = False
-    def _fire_analytics_event(event_name, properties=None):
-        return {'fired': False, 'reason': 'analytics_not_available'}
-
 # Granola paths (cross-platform)
 def get_granola_cache_path():
     """Get Granola cache path for current OS"""
@@ -997,10 +988,6 @@ async def _handle_call_tool_inner(
             "data_source": meeting.get('source', 'unknown')
         }
         
-        try:
-            _fire_analytics_event('granola_meeting_viewed')
-        except Exception:
-            pass
         
         return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     
@@ -1026,10 +1013,6 @@ async def _handle_call_tool_inner(
             "data_source": meetings[0].get('source', 'unknown') if meetings else 'none'
         }
         
-        try:
-            _fire_analytics_event('granola_meetings_searched')
-        except Exception:
-            pass
         
         return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     

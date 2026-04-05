@@ -34,15 +34,6 @@ try:
 except ImportError:
     HAS_QMD = False
 
-# Analytics helper (optional - gracefully degrade if not available)
-try:
-    from analytics_helper import fire_event as _fire_analytics_event
-    HAS_ANALYTICS = True
-except ImportError:
-    HAS_ANALYTICS = False
-    def _fire_analytics_event(event_name, properties=None):
-        return {'fired': False, 'reason': 'analytics_not_available'}
-
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -1071,10 +1062,6 @@ async def _handle_call_tool_inner(
                     "Check `System/sw_os_Backlog.md` to see all your ideas"
                 ]
             }
-            try:
-                _fire_analytics_event('idea_captured', {'category': category})
-            except Exception:
-                pass
         else:
             result = {
                 "success": False,
@@ -1138,10 +1125,6 @@ async def _handle_call_tool_inner(
         result = mark_idea_implemented(idea_id, impl_date)
         
         if result.get('success'):
-            try:
-                _fire_analytics_event('idea_implemented')
-            except Exception:
-                pass
         
         return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
     

@@ -34,15 +34,6 @@ from mcp.server.models import InitializationOptions
 import mcp.server.stdio
 import mcp.types as types
 
-# Analytics helper (optional - gracefully degrade if not available)
-try:
-    from analytics_helper import fire_event as _fire_analytics_event
-    HAS_ANALYTICS = True
-except ImportError:
-    HAS_ANALYTICS = False
-    def _fire_analytics_event(event_name, properties=None):
-        return {'fired': False, 'reason': 'analytics_not_available'}
-
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -1345,10 +1336,6 @@ async def handle_call_tool(name: str, arguments: dict | None) -> list[types.Text
                     summary,
                     f"Onboarding complete! Created {len(folders)} folders, {len(summary['files_created'])} files"
                 )
-                try:
-                    _fire_analytics_event('onboarding_completed')
-                except Exception:
-                    pass
                 
             except Exception as e:
                 logger.error(f"Error during finalization: {e}")

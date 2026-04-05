@@ -40,15 +40,6 @@ try:
 except ImportError:
     HAS_QMD = False
 
-# Analytics helper (optional - gracefully degrade if not available)
-try:
-    from analytics_helper import fire_event as _fire_analytics_event
-    HAS_ANALYTICS = True
-except ImportError:
-    HAS_ANALYTICS = False
-    def _fire_analytics_event(event_name, properties=None):
-        return {'fired': False, 'reason': 'analytics_not_available'}
-
 # Set up logging first (before any imports that might use it)
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -3605,14 +3596,6 @@ async def _handle_call_tool_inner(
             if result_sync['success']:
                 synced_pages.append(person)
         
-        # Fire analytics event (silent, best-effort)
-        try:
-            _fire_analytics_event('task_created', {
-                'pillar': pillar,
-                'priority': priority,
-            })
-        except Exception:
-            pass
         
         result = {
             "success": True,
@@ -3648,10 +3631,6 @@ async def _handle_call_tool_inner(
             result['related_tasks_synced'] = synced_pages
             
             if completed:
-                try:
-                    _fire_analytics_event('task_completed', {'method': 'task_id'})
-                except Exception:
-                    pass
             
             return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
         
@@ -3677,10 +3656,6 @@ async def _handle_call_tool_inner(
                 result['related_tasks_synced'] = synced_pages
                 
                 if completed:
-                    try:
-                        _fire_analytics_event('task_completed', {'method': 'task_title'})
-                    except Exception:
-                        pass
                 
                 return [types.TextContent(type="text", text=json.dumps(result, indent=2, cls=DateTimeEncoder))]
             
@@ -3708,10 +3683,6 @@ async def _handle_call_tool_inner(
                 status_name = STATUS_CODES.get(new_status, new_status)
                 
                 if completed:
-                    try:
-                        _fire_analytics_event('task_completed', {'method': 'legacy'})
-                    except Exception:
-                        pass
                 
                 result = {
                     "success": True,
@@ -4783,14 +4754,6 @@ async def _handle_call_tool_inner(
         with open(SKILL_RATINGS_FILE, 'a') as f:
             f.write(json.dumps(entry) + '\n')
 
-        # Fire analytics event (anonymous, consent-checked)
-        try:
-            _fire_analytics_event('skill_rated', {
-                'skill_name': skill_name,
-                'rating': rating,
-            })
-        except Exception:
-            pass
 
         return [types.TextContent(type="text", text=json.dumps({
             "success": True,

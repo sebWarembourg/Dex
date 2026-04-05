@@ -48,7 +48,6 @@ SERVER_MODULES = {
     "career-mcp": "career_server.py",
     "granola-mcp": "granola_server.py",
     "dex-improvements-mcp": "sw_os_improvements_server.py",
-    "dex-analytics": "analytics_server.py",
     "onboarding-mcp": "onboarding_server.py",
     "resume-mcp": "resume_server.py",
     "beta-mcp": "beta_server.py",
