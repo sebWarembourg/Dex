@@ -3,12 +3,16 @@
 # Injects strategic hierarchy and tactical context
 # For sw_os personal knowledge system
 
+# Load vault path (separate repo for personal data)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/../vault.env" 2>/dev/null || VAULT_PATH="$CLAUDE_PROJECT_DIR"
+
 CLAUDE_DIR="$CLAUDE_PROJECT_DIR"
-PILLARS_FILE="$CLAUDE_DIR/System/pillars.yaml"
-QUARTER_GOALS="$CLAUDE_DIR/01-Quarter_Goals/Quarter_Goals.md"
-WEEK_PRIORITIES="$CLAUDE_DIR/00-Inbox/Weekly_Plans.md"
-TASKS_FILE="$CLAUDE_DIR/03-Tasks/Tasks.md"
-LEARNINGS_DIR="$CLAUDE_DIR/06-Resources/Learnings"
+PILLARS_FILE="$VAULT_PATH/System/pillars.yaml"
+QUARTER_GOALS="$VAULT_PATH/01-Quarter_Goals/Quarter_Goals.md"
+WEEK_PRIORITIES="$VAULT_PATH/00-Inbox/Weekly_Plans.md"
+TASKS_FILE="$VAULT_PATH/03-Tasks/Tasks.md"
+LEARNINGS_DIR="$VAULT_PATH/06-Resources/Learnings"
 MISTAKES_FILE="$LEARNINGS_DIR/Mistake_Patterns.md"
 PREFERENCES_FILE="$LEARNINGS_DIR/Working_Preferences.md"
 ONBOARDING_MARKER="$CLAUDE_DIR/System/.onboarding-complete"

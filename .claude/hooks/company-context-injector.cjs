@@ -33,7 +33,14 @@ if (!filePath || filePath.includes('/05-Areas/Companies/') || filePath.includes(
   process.exit(0);
 }
 
-const VAULT_ROOT = process.env.CLAUDE_PROJECT_DIR || process.env.VAULT_PATH || process.cwd();
+// Load vault path from vault.env (separate repo for personal data)
+let VAULT_ROOT = process.env.CLAUDE_PROJECT_DIR || process.cwd();
+const vaultEnvPath = path.join(__dirname, '../vault.env');
+if (fs.existsSync(vaultEnvPath)) {
+  const envContent = fs.readFileSync(vaultEnvPath, 'utf-8');
+  const match = envContent.match(/VAULT_PATH="?([^"\n]+)"?/);
+  if (match) VAULT_ROOT = match[1];
+}
 // Primary location for company pages (new universal pattern)
 const COMPANIES_DIR = path.join(VAULT_ROOT, '02-Areas', 'Companies');
 // Legacy location for backwards compatibility
