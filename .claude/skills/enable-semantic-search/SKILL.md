@@ -168,7 +168,7 @@ cd "$VAULT_PATH" && qmd embed --help 2>/dev/null || true
 
 ## Step 5: Smart Collection Discovery (THE CONCIERGE)
 
-This is what makes Dex's semantic search better than generic indexing. Instead of dumping everything into one blob, we analyze the vault and create purpose-built collections.
+This is what makes sw_os's semantic search better than generic indexing. Instead of dumping everything into one blob, we analyze the vault and create purpose-built collections.
 
 ### Run the Vault Scanner
 

@@ -1,4 +1,4 @@
-# Dex Usage Tracking
+# sw_os Usage Tracking
 
 **Purpose:** Track feature adoption to help guide users to unused capabilities, and provide journey metadata for analytics.
 
@@ -68,8 +68,8 @@
 - [ ] Backlog review (`/dex-backlog`)
 - [ ] Improvement workshop (`/dex-improve`)
 - [ ] Idea captured (via MCP)
-- [ ] Dex updated (`/dex-update`)
-- [ ] Dex rolled back (`/dex-rollback`)
+- [ ] sw_os updated (`/dex-update`)
+- [ ] sw_os rolled back (`/dex-rollback`)
 - [ ] Learnings reviewed (`/learnings`)
 - [ ] Beta feature activated (`/beta-activate`)
 
@@ -123,7 +123,7 @@ Tracks whether user has been asked about anonymous feature usage tracking.
 
 **Values:**
 - `Consent decision: pending` → Not yet decided (will be asked each session until they choose)
-- `Consent decision: opted-in` → User agreed to help improve Dex
+- `Consent decision: opted-in` → User agreed to help improve sw_os
 - `Consent decision: opted-out` → User declined (never ask again)
 
 ---
@@ -192,7 +192,7 @@ Track your understanding of the underlying system (via `/xray`):
 
 ## Notes
 
-This file is automatically updated as you use Dex features:
+This file is automatically updated as you use sw_os features:
 - Checkboxes get checked when you use a feature
 - Journey metadata updates based on checked features
 - Run `/dex-level-up` anytime to discover capabilities you haven't explored yet

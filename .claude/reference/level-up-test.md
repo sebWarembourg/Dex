@@ -78,7 +78,7 @@ grep "Daily planning" System/usage_log.md
    ```markdown
    ---
    
-   💡 **Tip:** You're using 1 of 25 Dex features. Run `/dex-level-up` to see what you might be missing.
+   💡 **Tip:** You're using 1 of 25 sw_os features. Run `/dex-level-up` to see what you might be missing.
    ```
 4. Updates usage log metadata:
    ```markdown
@@ -156,9 +156,9 @@ grep "Last dex-level-up prompt" System/usage_log.md
 4. Displays output (Step 4):
 
 ```markdown
-# 🚀 Level Up Your Dex System
+# 🚀 Level Up Your sw_os System
 
-Based on your usage, here are **3 ways to get more value** from Dex:
+Based on your usage, here are **3 ways to get more value** from sw_os:
 
 ---
 
@@ -224,7 +224,7 @@ Just say the number or feature name, and I'll guide you through it.
 
 **Action:** 
 1. User says: "Let's try #1" or "I'll do the daily review"
-2. Dex guides them through `/review` command
+2. sw_os guides them through `/review` command
 3. Review completes successfully
 
 **Expected Behavior:**
@@ -355,9 +355,9 @@ grep "Daily review" System/usage_log.md
 4. Shows advanced recommendations:
 
 ```markdown
-# 🚀 Level Up Your Dex System
+# 🚀 Level Up Your sw_os System
 
-You're using Dex like a pro! 🎉 Here are **2 advanced capabilities** that could 
+You're using sw_os like a pro! 🎉 Here are **2 advanced capabilities** that could 
 take your system even further:
 
 ---
@@ -376,7 +376,7 @@ would save 15-20 minutes per week.
 
 ---
 
-## 2. System Customization - Make Dex Yours
+## 2. System Customization - Make sw_os Yours
 
 **What you're missing:** You've earned the right to bend the system to your needs.
 
@@ -441,7 +441,7 @@ could help someone just getting started.
 ## Running These Tests
 
 **Manual testing:**
-1. Fresh install Dex
+1. Fresh install sw_os
 2. Run through each test scenario
 3. Verify expected outputs match
 

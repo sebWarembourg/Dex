@@ -83,7 +83,7 @@ Run \`/dex-whats-new --learnings\` to:
 - See suggested system improvements
 - Mark learnings as implemented or archived
 
-This helps Dex evolve based on your actual workflow patterns.
+This helps sw_os evolve based on your actual workflow patterns.
 
 ---
 

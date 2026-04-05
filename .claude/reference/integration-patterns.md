@@ -9,7 +9,7 @@ Every setup skill includes this in its YAML frontmatter:
 ```yaml
 ---
 name: [tool]-setup
-description: Connect [Tool] to Dex for [one-liner]
+description: Connect [Tool] to sw_os for [one-liner]
 integration:
   id: [tool]
   name: [Full Name]

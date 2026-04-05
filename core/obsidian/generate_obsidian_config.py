@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Obsidian config optimized for Dex"""
+"""Generate Obsidian config optimized for sw_os"""
 import json
 from pathlib import Path
 
@@ -95,7 +95,7 @@ def generate_config(vault_path: Path):
     (obsidian_dir / 'workspace.json').write_text(json.dumps(workspace, indent=2))
     
     print("✅ Obsidian config generated")
-    print("   - Optimized settings for Dex")
+    print("   - Optimized settings for sw_os")
     print("   - Keyboard shortcuts configured")
     print("   - Default workspace layout")
 

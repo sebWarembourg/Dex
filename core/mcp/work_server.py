@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MCP Server for Dex Work Management System
+MCP Server for sw_os Work Management System
 Manages the complete planning hierarchy: quarterly goals → weekly priorities → daily tasks.
 
 Provides deterministic operations through structured tools with:
@@ -82,7 +82,7 @@ except ImportError:
 
 # Health system — error queue and health reporting
 try:
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -4851,7 +4851,7 @@ async def _main():
     """Async main entry point for the MCP server"""
     if _HAS_HEALTH:
         _mark_healthy("work-mcp")
-    logger.info(f"Starting Dex Work MCP Server")
+    logger.info(f"Starting sw_os Work MCP Server")
     logger.info(f"Vault path: {BASE_DIR}")
     logger.info(f"Tasks file: {get_tasks_file()}")
     logger.info(f"Pillars loaded: {list(PILLARS.keys())}")

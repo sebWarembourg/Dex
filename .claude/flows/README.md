@@ -95,7 +95,7 @@ Flows typically include:
 
 ## Examples
 
-- **onboarding.md** - First-time Dex setup (creates folders, configures pillars, sets preferences)
+- **onboarding.md** - First-time sw_os setup (creates folders, configures pillars, sets preferences)
 - Future: Integration setup flows, feature enablement guides
 
 ## Related

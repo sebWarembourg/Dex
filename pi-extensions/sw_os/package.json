@@ -1,0 +1,13 @@
+{
+  "name": "sw_os-pi-extension",
+  "version": "1.0.0",
+  "description": "sw_os for PI - Proactive, parallel, intelligent productivity system",
+  "type": "module",
+  "main": "index.ts",
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "keywords": ["pi-package", "sw_os", "productivity"],
+  "author": "Dave",
+  "license": "MIT"
+}

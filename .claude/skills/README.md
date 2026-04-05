@@ -185,13 +185,13 @@ Skills that run heavy workflows now execute in **isolated context** — your con
 
 ---
 
-## Skill Types in Dex
+## Skill Types in sw_os
 
-Dex includes two categories of skills:
+sw_os includes two categories of skills:
 
-### Dex Skills (PKM-Specific)
+### sw_os Skills (PKM-Specific)
 
-Built specifically for personal knowledge management and productivity workflows in Dex:
+Built specifically for personal knowledge management and productivity workflows in sw_os:
 
 **Getting Started:**
 - `/getting-started` - Interactive post-onboarding tour (adaptive to your setup)
@@ -239,7 +239,7 @@ Built specifically for personal knowledge management and productivity workflows 
 - `/dex-backlog` - AI-powered idea ranking
 - `/dex-improve` - Workshop improvement ideas
 - `/dex-whats-new` - Check for system improvements (learnings + Claude updates)
-- `/dex-update` - Update Dex automatically (shows what's new, updates if confirmed, no technical knowledge needed)
+- `/dex-update` - Update sw_os automatically (shows what's new, updates if confirmed, no technical knowledge needed)
 - `/dex-rollback` - Undo last update if something went wrong
 - `/dex-obsidian-setup` - Enable Obsidian integration and migrate vault to wiki links
 - `/integrate-mcp` - Integrate existing MCP servers from Smithery.ai marketplace

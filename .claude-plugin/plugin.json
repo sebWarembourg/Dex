@@ -1,14 +1,14 @@
 {
-  "name": "dex-by-dave",
+  "name": "sw_os",
   "version": "1.0.0",
-  "description": "Dex by Dave. Your AI Chief of Staff for strategic work management, meeting intelligence, relationship tracking, and daily planning.",
+  "description": "sw_os — Personal Operating System for PMs for strategic work management, meeting intelligence, relationship tracking, and daily planning.",
   "author": {
     "name": "Dave Killeen",
     "email": "dave@davekilleen.com",
     "url": "https://github.com/davekilleen"
   },
-  "homepage": "https://github.com/davekilleen/dex",
-  "repository": "https://github.com/davekilleen/dex",
+  "homepage": "https://github.com/sebWarembourg/sw_os",
+  "repository": "https://github.com/sebWarembourg/sw_os",
   "license": "PolyForm-Noncommercial-1.0.0",
   "keywords": [
     "productivity",
@@ -73,10 +73,10 @@
         "VAULT_PATH": "${VAULT_PATH}"
       }
     },
-    "dex-improvements": {
+    "sw_os-improvements": {
       "type": "stdio",
       "command": "python",
-      "args": ["-m", "core.mcp.dex_improvements_server"],
+      "args": ["-m", "core.mcp.sw_os_improvements_server"],
       "env": {
         "VAULT_PATH": "${VAULT_PATH}"
       }

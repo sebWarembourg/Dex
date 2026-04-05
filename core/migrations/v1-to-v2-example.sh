@@ -1,5 +1,5 @@
 #!/bin/bash
-# Dex Migration: v1.x → v2.0.0 (EXAMPLE)
+# sw_os Migration: v1.x → v2.0.0 (EXAMPLE)
 # Description: Renames 03-Tasks/ to 03-Backlog/ and updates all references
 # This is an EXAMPLE - not a real migration. Shows the pattern for future use.
 # Date: 2026-01-29
@@ -13,7 +13,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 echo "================================================"
-echo "Dex Migration: v1.x → v2.0.0 (EXAMPLE)"
+echo "sw_os Migration: v1.x → v2.0.0 (EXAMPLE)"
 echo "Description: Renames 03-Tasks/ to 03-Backlog/"
 echo "================================================"
 echo ""
@@ -165,7 +165,7 @@ echo "     • Open 03-Backlog/Tasks.md"
 echo "     • Run /daily-plan"
 echo "     • Check person pages"
 echo "  3. If all looks good: ${YELLOW}git add . && git commit -m \"Migrated to v2.0.0\"${NC}"
-echo "  4. Update Dex: ${YELLOW}git fetch upstream && git merge upstream/main${NC}"
+echo "  4. Update sw_os: ${YELLOW}git fetch upstream && git merge upstream/main${NC}"
 echo ""
 echo "Migration log: $LOG_FILE"
 echo ""

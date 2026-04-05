@@ -1,6 +1,6 @@
-# Dex Plugin Distribution Guide
+# sw_os Plugin Distribution Guide
 
-This guide explains how to distribute Dex as a Claude Code plugin.
+This guide explains how to distribute sw_os as a Claude Code plugin.
 
 ## Current Status
 
@@ -8,7 +8,7 @@ This guide explains how to distribute Dex as a Claude Code plugin.
 ✅ **Plugin README created** - `.claude-plugin/PLUGIN_README.md`
 ✅ **Core components organized** - Skills, MCP servers, hooks all in `.claude/`
 ✅ **Python MCP servers functional** - `core/mcp/` directory with all servers
-✅ **Documentation complete** - Comprehensive guides in `06-Resources/Dex_System/`
+✅ **Documentation complete** - Comprehensive guides in `06-Resources/sw_os_System/`
 
 ## Distribution Options
 
@@ -55,7 +55,7 @@ claude plugin install https://github.com/davekilleen/dex
 ### Option 2: Submit to Official Claude Code Marketplace
 
 **How it works:**
-Anthropic maintains an official marketplace at `claude-plugins-official`. You submit a PR to add Dex.
+Anthropic maintains an official marketplace at `claude-plugins-official`. You submit a PR to add sw_os.
 
 **What you need to do:**
 
@@ -134,7 +134,7 @@ You create a marketplace that users can add to Claude Code, similar to `every-ma
    }
    ```
 
-3. **Copy Dex into the marketplace**
+3. **Copy sw_os into the marketplace**
    ```bash
    cp -r /Users/dave/Claudesidian/dex-core ./plugins/dex
    ```
@@ -153,7 +153,7 @@ You create a marketplace that users can add to Claude Code, similar to `every-ma
    # Add the marketplace
    claude plugin marketplace add https://github.com/davekilleen/dex-marketplace
 
-   # Install Dex from your marketplace
+   # Install sw_os from your marketplace
    claude plugin install dex@dex-marketplace
    ```
 
@@ -182,7 +182,7 @@ You create a marketplace that users can add to Claude Code, similar to `every-ma
    - Professional distribution
    - Easy for users: one command to add marketplace
    - You control updates
-   - Can add complementary plugins later (Dex Premium features, integrations, etc.)
+   - Can add complementary plugins later (sw_os Premium features, integrations, etc.)
 
 3. **Submit to official marketplace** (Option 2) - Later
    - Once proven stable
@@ -332,7 +332,7 @@ cd ~/my-dex-vault
 # In Claude Code, type: /setup
 # Follow the prompts (name, role, pillars, etc.)
 
-# 5. Start using Dex!
+# 5. Start using sw_os!
 # Type: /daily-plan
 ```
 
@@ -341,7 +341,7 @@ cd ~/my-dex-vault
 Once distributed, promote it:
 
 1. **Vibe PM Podcast Episode** - You already have Episode 8, create a follow-up about the plugin
-2. **LinkedIn Post** - "Dex is now available as a Claude Code plugin"
+2. **LinkedIn Post** - "sw_os is now available as a Claude Code plugin"
 3. **GitHub README** - Clear "Install" button at the top
 4. **Demo Video** - Show installation and first 5 minutes
 5. **X/Twitter Thread** - Installation walkthrough
@@ -353,7 +353,7 @@ Once distributed, promote it:
 If you want to offer premium features later:
 
 1. **Free Core + Premium Marketplace**
-   - Base Dex is free (current features)
+   - Base sw_os is free (current features)
    - Premium marketplace with advanced features:
      - Advanced integrations (Salesforce, HubSpot, etc.)
      - Team collaboration features
@@ -377,7 +377,7 @@ If you want to offer premium features later:
    - [ ] Validate with `claude plugin validate`
 
 2. **Short-term** (Next 2 weeks):
-   - [ ] Create GitHub repository for Dex
+   - [ ] Create GitHub repository for sw_os
    - [ ] Push dex-core to main branch
    - [ ] Test GitHub-based installation
    - [ ] Update main README with plugin installation instructions
@@ -385,7 +385,7 @@ If you want to offer premium features later:
 
 3. **Medium-term** (Next month):
    - [ ] Create dex-marketplace repository
-   - [ ] Add more plugins to marketplace (future: Dex Premium, Dex Analytics, etc.)
+   - [ ] Add more plugins to marketplace (future: sw_os Premium, sw_os Analytics, etc.)
    - [ ] Submit to claude-plugins-official (if desired)
    - [ ] Create comprehensive installation guide video
    - [ ] Promote on LinkedIn, X, podcast

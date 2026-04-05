@@ -36,10 +36,10 @@ const nonInteractive =
   process.env.CLAUDE_CODE_NONINTERACTIVE === '1';
 
 const reasonLines = [
-  'Dex requires an explicit MCP scope so your config stays safe.',
+  'sw_os requires an explicit MCP scope so your config stays safe.',
   '',
-  'Use the Dex wrapper:',
-  '  /dex-add-mcp',
+  'Use the sw_os wrapper:',
+  '  /sw_os-add-mcp',
   '',
   'Or run:',
   '  claude mcp add --scope user <server-name> -- <command> <args>',

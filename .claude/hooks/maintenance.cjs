@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Dex Vault Maintenance
+ * sw_os Vault Maintenance
  *
  * Usage: node .claude/hooks/maintenance.cjs
  * Future: Will be triggered by Claude Code "Setup" hook event
@@ -186,7 +186,7 @@ function checkStaleMemory() {
 }
 
 // === Run All Checks ===
-console.log('Dex Vault Maintenance\n');
+console.log('sw_os Vault Maintenance\n');
 
 checkStaleInbox();
 checkBrokenLinks();

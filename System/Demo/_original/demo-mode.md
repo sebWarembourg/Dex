@@ -1,6 +1,6 @@
 # Demo Mode Reference
 
-Dex includes a demo mode with pre-populated content so you can explore the system before adding your own data.
+sw_os includes a demo mode with pre-populated content so you can explore the system before adding your own data.
 
 ## Toggling Demo Mode
 
@@ -62,7 +62,7 @@ Demo mode uses content from `System/Demo/` which includes:
 
 ## When to Use Demo Mode
 
-- **New users:** Explore how Dex works before adding your own content
+- **New users:** Explore how sw_os works before adding your own content
 - **Demoing to colleagues:** Show the PKM system with realistic data
 - **Testing commands:** Experiment without affecting your real vault
 

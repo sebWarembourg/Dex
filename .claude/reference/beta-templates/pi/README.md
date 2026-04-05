@@ -40,7 +40,7 @@ Pi will start and be ready to build tools for you.
 Ask Pi to create something:
 
 ```
-Build me a tool that lists all my overdue tasks from the Dex task system
+Build me a tool that lists all my overdue tasks from the sw_os task system
 ```
 
 Pi will:
@@ -49,9 +49,9 @@ Pi will:
 3. Save it to `.pi/extensions/`
 4. The tool is now available
 
-## How Pi Connects to Dex
+## How Pi Connects to sw_os
 
-Pi has **native MCP (Model Context Protocol) support** — it can directly access your Dex MCP servers without any bridge code.
+Pi has **native MCP (Model Context Protocol) support** — it can directly access your sw_os MCP servers without any bridge code.
 
 This means tools Pi builds can:
 - Access your task list
@@ -71,11 +71,11 @@ Pi excels at **analytical and cross-cutting tools**:
 - Ad-hoc dashboards
 - Role-specific workflows
 
-For **deterministic operations** (task CRUD, calendar writes), continue using Dex directly — reliability matters more than flexibility there.
+For **deterministic operations** (task CRUD, calendar writes), continue using sw_os directly — reliability matters more than flexibility there.
 
 ## Pi vs Claude Code
 
-| | Claude Code (Dex) | Pi |
+| | Claude Code (sw_os) | Pi |
 |---|---|---|
 | **Add features** | Edit skill files | Describe what you want |
 | **Iteration** | Find file → edit → test | "Also do X" → done |
@@ -88,19 +88,19 @@ For **deterministic operations** (task CRUD, calendar writes), continue using De
 
 ### MCP Servers
 
-Pi connects directly to these Dex MCP servers:
+Pi connects directly to these sw_os MCP servers:
 
 - **work-mcp** — For task/goal/priority operations
 - **calendar-mcp** — For calendar access
 - **career-mcp** — For career development tracking
 - **commitment-mcp** — For commitment detection
-- And all other Dex MCP servers
+- And all other sw_os MCP servers
 
 These are configured automatically during beta activation.
 
 ### AGENTS.md
 
-Pi's context about your Dex vault is in `.pi/AGENTS.md`. Edit this to give Pi more context about your specific setup.
+Pi's context about your sw_os vault is in `.pi/AGENTS.md`. Edit this to give Pi more context about your specific setup.
 
 ## Troubleshooting
 
@@ -112,7 +112,7 @@ Reinstall Pi:
 npm install -g @mariozechner/pi-coding-agent
 ```
 
-### Pi can't access Dex data
+### Pi can't access sw_os data
 
 Check that MCP servers are running:
 
@@ -120,7 +120,7 @@ Check that MCP servers are running:
 pi --mcp-status
 ```
 
-If servers aren't connecting, verify your `.pi/config.json` has the Dex MCP servers configured.
+If servers aren't connecting, verify your `.pi/config.json` has the sw_os MCP servers configured.
 
 ### Extension not working
 
@@ -145,7 +145,7 @@ Your feedback shapes this integration. Message Dave directly on WhatsApp with:
 
 ### 0.1.0 (Current)
 - Initial beta release
-- MCP bridge to Dex task and calendar systems
+- MCP bridge to sw_os task and calendar systems
 - Auto-installation during activation
 
 ---

@@ -1,13 +1,13 @@
 # Guides
 
-**Purpose:** System documentation and conventions that explain how Dex works and how to use it effectively.
+**Purpose:** System documentation and conventions that explain how sw_os works and how to use it effectively.
 
 ## What Goes Here
 
 Documentation files that:
 - Explain system conventions and patterns
 - Define standards for file organization
-- Describe best practices for using Dex
+- Describe best practices for using sw_os
 - Document architectural decisions
 
 ## When to Use

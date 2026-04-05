@@ -6,87 +6,72 @@
 |-------|-------|
 | **Role** | {{Title}} |
 | **Company** | {{Company Name}} |
-| **Company Page** | 05-Areas/Companies/{{Company_Name}}.md |
 | **Email** | {{email@company.com}} |
-| **Phone** | {{Phone number}} |
 | **LinkedIn** | {{LinkedIn URL}} |
 | **Location** | {{City, Country}} |
-| **Timezone** | {{Timezone}} |
 
 ---
 
 ## Relationship Context
 
 **How we met:** {{Context of first meeting}}
-
-**Relationship type:** {{Customer / Colleague / Partner / Advisor / Other}}
-
+**Relationship type:** {{Customer / Colleague / Partner / Advisor / Recruiter / Other}}
 **Strength:** {{Strong / Developing / New}}
-
 **Last interaction:** {{Date and brief note}}
 
 ---
 
-## What They Care About
+## Communication & Working Style
 
-- {{Priority 1}}
-- {{Priority 2}}
-- {{Priority 3}}
+- **Format préféré :** {{BLUF / narrative / data-first / visuel}}
+- **Canal préféré :** {{Slack / email / téléphone / en personne}}
+- **Style de meeting :** {{agenda strict / free-form / hybrid}}
+- **Décision :** {{quick decider / besoin de temps / consensus-builder}}
+- **Ce qui compte pour eux :** {{2-3 priorités clés}}
+- **Comment bien travailler avec eux :** {{2-3 points actionnables}}
 
 ---
 
-## Working Style Notes
+## Ce qu'ils font / Ce qu'ils cherchent
 
-{{How they like to communicate, decision-making style, preferences}}
+- {{Point 1}}
+- {{Point 2}}
 
 ---
 
 ## Key Context
 
-{{Important background, history, things to remember}}
+{{Background important, historique, choses à ne pas oublier}}
 
 ---
 
 ## Meeting History
 
-| Date | Topic | Notes Link |
-|------|-------|------------|
-| {{Date}} | {{Topic}} | 00-Inbox/Meetings/{{Date}}.md |
+| Date | Sujet | Notes |
+|------|-------|-------|
+| {{Date}} | {{Sujet}} | 00-Inbox/Meetings/{{Date}} - {{Sujet}}.md |
 
 ---
 
-## Integration Context
+## Contexte outils
 
-*This section is auto-populated when integrations are enabled.*
+**Notion :** {{Pages partagées, docs co-édités, liens pertinents}}
 
-### Slack
-<!-- Auto-updated with recent Slack mentions and conversations -->
-{{Recent Slack context with this person}}
+**Gmail :** {{Derniers échanges, sujets ouverts, threads en attente}}
 
-### Notion
-<!-- Auto-updated with shared Notion pages -->
-{{Notion pages shared or co-edited with this person}}
+---
 
-### Email
-<!-- Auto-updated from Gmail integration -->
-{{Recent email threads and outstanding requests}}
+## Action Items
+
+- [ ] {{Action item — deadline}}
 
 ---
 
 ## Related
 
-- **Company:** 05-Areas/Companies/{{Company Name}}.md
-- **Projects:** 04-Projects/{{Project 1}}.md, 04-Projects/{{Project 2}}.md
-- **Introduced by:** 05-Areas/People/{{Person Name}}.md
+- **Projets communs :** {{04-Projects/...}}
+- **Introduit par :** {{05-Areas/People/...}}
 
 ---
 
-## Action Items Involving Them
-
-- [ ] {{Action item}}
-- [ ] {{Action item}}
-
----
-
-*Created: {{Date}}*
-*Updated: {{Date}}*
+*Créé : {{Date}} — Mis à jour : {{Date}}*

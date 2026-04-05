@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Check and request Reminders permissions for Dex.
+Check and request Reminders permissions for sw_os.
 
 Mirrors check_calendar_permission.py but for EKEntityTypeReminder.
 Reminders uses a separate TCC permission from Calendar even though

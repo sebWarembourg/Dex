@@ -10,10 +10,10 @@ Track recurring mistakes to prevent them. When you notice something going wrong 
 > - The impact
 > - How to avoid it
 
-### Example Pattern — Task Scope Creep
-- **Trigger**: Starting a task without clear boundaries
-- **Impact**: Tasks take 3x longer than expected
-- **Mitigation**: Always define "done" before starting
+### Dispersion — trop de sujets en parallèle
+- **Trigger**: Enthousiasme sur un nouveau sujet avant d'avoir fini le précédent
+- **Impact**: Rien ne va au bout, perte d'impact, "tu avais raison trop tôt"
+- **Mitigation**: Finir avant de démarrer. Max 3 sujets actifs par pilier.
 
 ---
 

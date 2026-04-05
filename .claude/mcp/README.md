@@ -1,6 +1,6 @@
 # MCP Configurations
 
-**Purpose:** Model Context Protocol (MCP) server configurations that connect external tools and data sources to Dex.
+**Purpose:** Model Context Protocol (MCP) server configurations that connect external tools and data sources to sw_os.
 
 ---
 
@@ -83,4 +83,4 @@ Use `/create-mcp` skill to:
 - **Reference** (`.claude/reference/mcp-servers.md`) - Technical MCP documentation
 - **Core MCP** (`core/mcp/`) - MCP server implementations
 - **Skills** (`.claude/skills/create-mcp/`) - MCP creation wizard
-- **Integrations** (`06-Resources/Dex_System/Integrations/`) - Integration guides
+- **Integrations** (`06-Resources/sw_os_System/Integrations/`) - Integration guides

@@ -37,7 +37,7 @@ This structure is automatically created by `/process-meetings` when importing fr
 
 ## What Happens During Processing
 
-When you process meetings, Dex automatically:
+When you process meetings, sw_os automatically:
 - Extracts action items → links to person pages
 - Identifies key decisions → surfaces in summaries
 - Updates person pages with meeting history

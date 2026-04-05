@@ -1,11 +1,11 @@
 ---
 name: ai-setup
-description: Configure AI model options - budget cloud models (save 80%+) and offline mode (use Dex without internet)
+description: Configure AI model options - budget cloud models (save 80%+) and offline mode (use sw_os without internet)
 ---
 
 ## Purpose
 
-Help users configure alternative AI models for Dex:
+Help users configure alternative AI models for sw_os:
 1. **Budget Cloud** - Cheaper models like Kimi, DeepSeek (80-97% savings)
 2. **Offline Mode** - Local models via Ollama (works without internet)
 3. **Smart Routing** - Automatically pick the best model per task
@@ -29,7 +29,7 @@ Say:
 ```
 **Let's configure your AI options!**
 
-Right now, Dex uses Claude for everything. It's excellent, but it costs money per use and requires internet.
+Right now, sw_os uses Claude for everything. It's excellent, but it costs money per use and requires internet.
 
 Here are your options:
 
@@ -44,7 +44,7 @@ Here are your options:
    - That $5-10 lasts weeks or months
    - Example: If Claude costs you $90/month, this would cost ~$10-20/month
    
-   **Best for:** People who use Dex heavily and want to cut costs
+   **Best for:** People who use sw_os heavily and want to cut costs
 
 ---
 
@@ -196,7 +196,7 @@ Think of it like a phone plan that lets you call different networks.
 **Step 3: Create an API key**
    - Go to: https://openrouter.ai/keys
    - Click "Create Key"
-   - Give it a name like "Dex"
+   - Give it a name like "sw_os"
    - Copy the key (starts with `sk-or-...`)
 
 **Step 4: Paste your key here**
@@ -495,13 +495,13 @@ Go ahead and test, then turn WiFi back on and let me know how it went.
 **Offline mode is ready!**
 
 What happens now:
-- When you have internet → Dex uses Claude (best quality)
-- When you're offline → Dex can use your local model
+- When you have internet → sw_os uses Claude (best quality)
+- When you're offline → sw_os can use your local model
 - You can also manually switch anytime with `/model`
 
 **For your next flight or train ride:**
 1. Make sure Ollama is running (llama icon in menu bar)
-2. Start Pi/Dex as usual
+2. Start Pi/sw_os as usual
 3. If internet isn't available, switch to your offline model
 
 **Pro tip:** Test it at home once before relying on it during travel!
@@ -795,7 +795,7 @@ After any setup completes, show an adaptive summary and offer smart routing:
 | Offline Mode | ✅ Ready (Qwen 2.5) |
 
 **How to use offline mode:**
-- When you're online: Dex uses Claude (best quality)
+- When you're online: sw_os uses Claude (best quality)
 - When you're offline: Switch with `/model` or say "use offline model"
 - Or I can switch automatically when I detect you're offline
 

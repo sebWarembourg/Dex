@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Career Development MCP Server for Dex
+Career Development MCP Server for sw_os
 
 Provides tools for career evidence aggregation, ladder parsing,
 competency coverage analysis, and progress tracking.
@@ -57,7 +57,7 @@ from career_parser import (
 # Health system — error queue and health reporting
 try:
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -1182,7 +1182,7 @@ async def _main():
     """Async main entry point for the MCP server"""
     if _HAS_HEALTH:
         _mark_healthy("career-mcp")
-    logger.info("Starting Dex Career MCP Server")
+    logger.info("Starting sw_os Career MCP Server")
     logger.info(f"Vault path: {BASE_DIR}")
     logger.info(f"Career directory: {CAREER_DIR}")
     logger.info(f"Evidence directory: {EVIDENCE_DIR}")

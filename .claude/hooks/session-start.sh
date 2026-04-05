@@ -1,7 +1,7 @@
 #!/bin/bash
 # Claude Code SessionStart Hook
 # Injects strategic hierarchy and tactical context
-# For Dex personal knowledge system
+# For sw_os personal knowledge system
 
 CLAUDE_DIR="$CLAUDE_PROJECT_DIR"
 PILLARS_FILE="$CLAUDE_DIR/System/pillars.yaml"
@@ -13,7 +13,7 @@ MISTAKES_FILE="$LEARNINGS_DIR/Mistake_Patterns.md"
 PREFERENCES_FILE="$LEARNINGS_DIR/Working_Preferences.md"
 ONBOARDING_MARKER="$CLAUDE_DIR/System/.onboarding-complete"
 
-echo "=== Dex Session Context ==="
+echo "=== sw_os Session Context ==="
 echo ""
 echo "📅 Today: $(date '+%A, %B %d, %Y')"
 echo ""
@@ -30,7 +30,7 @@ if [[ -f "$ONBOARDING_MARKER" ]]; then
 
     # Check for Claude Code updates (if 24+ hours since last check)
     if [[ -x "$CLAUDE_DIR/.scripts/check-anthropic-changelog.cjs" ]]; then
-        node "$CLAUDE_DIR/.scripts/check-anthropic-changelog.cjs" 2>/dev/null &
+        node "$CLAUDE_DIR/.scripts/check-anthropic-changelog.cjs" >/dev/null 2>&1 &
     fi
 
     # Check for pending learnings (if not checked today)
@@ -66,8 +66,8 @@ if [[ -f "$QUARTER_GOALS" ]]; then
     # Check if goals are filled in (not template)
     if ! grep -q "^\[Goal 1 Title\]" "$QUARTER_GOALS" 2>/dev/null; then
         echo "--- Quarter Goals ---"
-        # Extract goal titles and progress
-        awk '/^### [0-9]\./,/^---$/{if(/^### [0-9]\./) print; if(/^\*\*Progress:\*\*/) print}' "$QUARTER_GOALS" 2>/dev/null | head -10
+        # Extract pillar goals and status
+        awk '/^## Pilier/{name=$0; gsub(/^## /, "", name)} /^\*\*Status \*\*:|\*\*Status :\*\*/{print "• " name " " $0}' "$QUARTER_GOALS" 2>/dev/null | head -6
         echo "---"
         echo ""
     fi
@@ -185,7 +185,7 @@ if [[ -f "$ONBOARDING_MARKER" ]]; then
     fi
 fi
 
-# 11. Dex Health System — Pre-flight checks and error queue
+# 11. sw_os Health System — Pre-flight checks and error queue
 # Runs preflight health checks (MCP servers, config files, etc.) and displays
 # any queued errors. Silent when everything is healthy (no output = no display).
 if [[ -f "$ONBOARDING_MARKER" ]]; then

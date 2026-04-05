@@ -229,14 +229,14 @@ def _resolve_vault_path() -> str:
 
     cwd = Path.cwd()
 
-    # Walk up to find a Dex vault root (has System/pillars.yaml)
+    # Walk up to find a sw_os vault root (has System/pillars.yaml)
     for parent in [cwd] + list(cwd.parents):
         if (parent / "System" / "pillars.yaml").exists():
             return str(parent)
 
     # Check common locations
     home = Path.home()
-    for name in ["Claudesidian", "Dex", "dex-vault"]:
+    for name in ["Claudesidian", "sw_os", "dex-vault"]:
         candidate = home / name
         if candidate.exists() and (candidate / "System").exists():
             return str(candidate)

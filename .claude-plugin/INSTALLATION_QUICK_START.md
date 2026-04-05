@@ -1,6 +1,6 @@
-# Dex Quick Start Installation
+# sw_os Quick Start Installation
 
-**Get up and running with Dex in 5 minutes.**
+**Get up and running with sw_os in 5 minutes.**
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ claude plugin add . --scope user
 
    Or if that skill isn't available yet, ask Claude:
    ```
-   I'd like to set up Dex. Can you start the onboarding process?
+   I'd like to set up sw_os. Can you start the onboarding process?
    ```
 
 3. **Answer Setup Questions**
@@ -67,7 +67,7 @@ claude plugin add . --scope user
 
 4. **Vault Creation**
 
-   Dex will automatically create your vault structure:
+   sw_os will automatically create your vault structure:
    ```
    my-dex-vault/
    ├── 00-Inbox/           # Capture zone
@@ -107,7 +107,7 @@ Key decisions:
 - Need design mockups by next week
 ```
 
-Dex will automatically:
+sw_os will automatically:
 - Create a meeting note
 - Extract action items
 - Create/update Sarah's person page
@@ -141,14 +141,14 @@ This will:
 - `/granola-daily` - Process recorded meetings (if using Granola app)
 
 ### Task Management
-- Just say: "Add task: [description]" - Dex infers the pillar
+- Just say: "Add task: [description]" - sw_os infers the pillar
 - "Mark X as done" - Complete tasks naturally
 - `/promote-to-week` - Pull tasks from projects into weekly focus
 
 ### Discovery
 - `/dex-level-up` - See what features you haven't used yet
 - `/dex-whats-new` - Check for system updates
-- `/xray` - Understand how Dex works under the hood
+- `/xray` - Understand how sw_os works under the hood
 
 ## Troubleshooting
 
@@ -220,20 +220,20 @@ If you get stuck during onboarding:
 
 - Learn `/xray` to understand the AI context system
 - Customize your workflow with personal skills
-- Share Dex with your team (demo mode available)
+- Share sw_os with your team (demo mode available)
 
 ## Getting Help
 
-- **Documentation**: Check `06-Resources/Dex_System/Dex_System_Guide.md` in your vault
+- **Documentation**: Check `06-Resources/sw_os_System/Dex_System_Guide.md` in your vault
 - **Feature Discovery**: Type `/dex-level-up` to see unused features
 - **System Updates**: Type `/dex-whats-new` for latest improvements
 - **Issues**: Report on [GitHub Issues](https://github.com/davekilleen/dex/issues)
 
-## What Makes Dex Different
+## What Makes sw_os Different
 
 Most people use AI as a chat interface. You ask questions, get answers, start fresh every time.
 
-**Dex is different:**
+**sw_os is different:**
 - Persistent memory across sessions
 - Context that compounds over time
 - Proactive intelligence (not just reactive)

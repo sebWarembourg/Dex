@@ -6,9 +6,10 @@ Capture how you like to work so the AI can adapt to your style. When you share a
 
 > How you prefer to receive information and feedback
 
-### Example: Direct Feedback
-- Give me straight feedback, don't sugarcoat issues
-- Added: 2026-01-22
+### Feedback direct
+- Feedback direct, pas de sugarcoating
+- Recadrage si je pars dans tous les sens (scope creep, aller trop vite)
+- Added: 2026-04-03
 
 ---
 

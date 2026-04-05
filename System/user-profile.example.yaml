@@ -63,7 +63,7 @@ communication:
 pillars: []
 
 # Meeting Processing Configuration
-# How Dex processes meetings from Granola
+# How sw_os processes meetings from Granola
 meeting_processing:
   # Mode: "manual" (run /process-meetings) or "automatic" (background sync)
   mode: manual
@@ -133,14 +133,14 @@ integrations:
   pendo_mcp_enabled: false  # Pendo product analytics (OAuth via Cursor MCP)
 
 # Analytics Configuration
-# Controls anonymous feature usage tracking to help Dave improve Dex
-# Only Dex built-in features are tracked, never content or what you do with features
+# Controls anonymous feature usage tracking to help Dave improve sw_os
+# Only sw_os built-in features are tracked, never content or what you do with features
 analytics:
-  # Master switch - set to true if you opted in to help improve Dex
+  # Master switch - set to true if you opted in to help improve sw_os
   enabled: false
 
 # ScreenPipe Configuration
-# Enables ambient work intelligence - Dex learns what you're working on via screen OCR
+# Enables ambient work intelligence - sw_os learns what you're working on via screen OCR
 # All data stays local on your machine, never sent anywhere
 screenpipe:
   # Master switch - set to true after opt-in to enable ScreenPipe features

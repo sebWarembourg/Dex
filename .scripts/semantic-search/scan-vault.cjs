@@ -4,7 +4,7 @@
  * 
  * Analyzes the vault structure and suggests purpose-built qmd collections
  * based on what content actually exists. This is the "concierge" that makes
- * Dex's semantic search smarter than generic indexing.
+ * sw_os's semantic search smarter than generic indexing.
  * 
  * Usage:
  *   node scan-vault.cjs                    # Full scan with candidates

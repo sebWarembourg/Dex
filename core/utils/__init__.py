@@ -1,1 +1,1 @@
-"""Dex utility modules"""
+"""sw_os utility modules"""

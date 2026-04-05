@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Apple Calendar MCP Server for Dex
+Apple Calendar MCP Server for sw_os
 
 Provides read/write access to Apple Calendar via AppleScript.
 Works with any calendar synced to Calendar.app, including Google accounts.
@@ -17,7 +17,7 @@ Tools:
 - reminders_list_items: Get incomplete items from a Reminders list
 - reminders_complete_item: Mark a Reminder as complete
 - reminders_create_item: Create a new Reminder
-- reminders_ensure_lists: Create Dex Inbox/Today lists if missing
+- reminders_ensure_lists: Create sw_os Inbox/Today lists if missing
 - reminders_list_completed: Get recently completed Reminders for sync
 - reminders_find_and_complete: Find and complete a Reminder by title match
 - reminders_clear_completed: Remove completed Reminders from a list
@@ -47,7 +47,7 @@ PEOPLE_DIR = VAULT_PATH / "People"
 try:
     import sys as _sys
     _sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-    from core.utils.dex_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
+    from core.utils.sw_os_logger import log_error as _log_health_error, mark_healthy as _mark_healthy
     _HAS_HEALTH = True
 except ImportError:
     _HAS_HEALTH = False
@@ -470,13 +470,13 @@ async def handle_list_tools() -> list[types.Tool]:
         # --- Apple Reminders tools ---
         types.Tool(
             name="reminders_list_items",
-            description="Get incomplete items from an Apple Reminders list. Use with 'Dex Inbox' to check for mobile-captured tasks.",
+            description="Get incomplete items from an Apple Reminders list. Use with 'sw_os Inbox' to check for mobile-captured tasks.",
             inputSchema={
                 "type": "object",
                 "properties": {
                     "list_name": {
                         "type": "string",
-                        "description": "Name of the Reminders list (default: 'Dex Inbox')"
+                        "description": "Name of the Reminders list (default: 'sw_os Inbox')"
                     }
                 },
                 "required": []
@@ -484,7 +484,7 @@ async def handle_list_tools() -> list[types.Tool]:
         ),
         types.Tool(
             name="reminders_complete_item",
-            description="Mark a Reminder as complete (e.g., after triaging into Dex tasks)",
+            description="Mark a Reminder as complete (e.g., after triaging into sw_os tasks)",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -498,13 +498,13 @@ async def handle_list_tools() -> list[types.Tool]:
         ),
         types.Tool(
             name="reminders_create_item",
-            description="Create a new Reminder in a specific list (e.g., push P0 tasks to 'Dex Today' for iOS notifications)",
+            description="Create a new Reminder in a specific list (e.g., push P0 tasks to 'sw_os Today' for iOS notifications)",
             inputSchema={
                 "type": "object",
                 "properties": {
                     "list_name": {
                         "type": "string",
-                        "description": "Name of the Reminders list (default: 'Dex Today')"
+                        "description": "Name of the Reminders list (default: 'sw_os Today')"
                     },
                     "title": {
                         "type": "string",
@@ -524,7 +524,7 @@ async def handle_list_tools() -> list[types.Tool]:
         ),
         types.Tool(
             name="reminders_ensure_lists",
-            description="Create 'Dex Inbox' and 'Dex Today' Reminders lists if they don't exist. Idempotent — safe to call every time.",
+            description="Create 'sw_os Inbox' and 'sw_os Today' Reminders lists if they don't exist. Idempotent — safe to call every time.",
             inputSchema={
                 "type": "object",
                 "properties": {},
@@ -533,13 +533,13 @@ async def handle_list_tools() -> list[types.Tool]:
         ),
         types.Tool(
             name="reminders_list_completed",
-            description="Get recently completed items from a Reminders list (last 2 days). Use with 'Dex Today' to detect tasks completed on phone for sync back to Dex.",
+            description="Get recently completed items from a Reminders list (last 2 days). Use with 'sw_os Today' to detect tasks completed on phone for sync back to sw_os.",
             inputSchema={
                 "type": "object",
                 "properties": {
                     "list_name": {
                         "type": "string",
-                        "description": "Name of the Reminders list (default: 'Dex Today')"
+                        "description": "Name of the Reminders list (default: 'sw_os Today')"
                     }
                 },
                 "required": []
@@ -547,13 +547,13 @@ async def handle_list_tools() -> list[types.Tool]:
         ),
         types.Tool(
             name="reminders_find_and_complete",
-            description="Find a Reminder by title match and mark it complete. Use for Dex → Reminders sync when a task is done in Dex.",
+            description="Find a Reminder by title match and mark it complete. Use for sw_os → Reminders sync when a task is done in sw_os.",
             inputSchema={
                 "type": "object",
                 "properties": {
                     "list_name": {
                         "type": "string",
-                        "description": "Name of the Reminders list (default: 'Dex Today')"
+                        "description": "Name of the Reminders list (default: 'sw_os Today')"
                     },
                     "title_query": {
                         "type": "string",
@@ -565,13 +565,13 @@ async def handle_list_tools() -> list[types.Tool]:
         ),
         types.Tool(
             name="reminders_clear_completed",
-            description="Remove all completed Reminders from a list. Use to clean up 'Dex Today' at start of day.",
+            description="Remove all completed Reminders from a list. Use to clean up 'sw_os Today' at start of day.",
             inputSchema={
                 "type": "object",
                 "properties": {
                     "list_name": {
                         "type": "string",
-                        "description": "Name of the Reminders list (default: 'Dex Today')"
+                        "description": "Name of the Reminders list (default: 'sw_os Today')"
                     }
                 },
                 "required": []
@@ -897,7 +897,7 @@ async def _handle_call_tool_inner(
     
     # --- Apple Reminders handlers ---
     elif name == "reminders_list_items":
-        list_name = arguments.get("list_name", "Dex Inbox")
+        list_name = arguments.get("list_name", "sw_os Inbox")
         success, output = run_shell_script("reminders_eventkit.py", "list_items", list_name)
         if success:
             try:
@@ -922,7 +922,7 @@ async def _handle_call_tool_inner(
         return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
 
     elif name == "reminders_create_item":
-        list_name = arguments.get("list_name", "Dex Today")
+        list_name = arguments.get("list_name", "sw_os Today")
         title = arguments["title"]
         notes = arguments.get("notes", "")
         due_date = arguments.get("due_date", "")
@@ -948,7 +948,7 @@ async def _handle_call_tool_inner(
         return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
 
     elif name == "reminders_list_completed":
-        list_name = arguments.get("list_name", "Dex Today")
+        list_name = arguments.get("list_name", "sw_os Today")
         success, output = run_shell_script("reminders_eventkit.py", "list_completed", list_name)
         if success:
             try:
@@ -961,7 +961,7 @@ async def _handle_call_tool_inner(
         return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
 
     elif name == "reminders_find_and_complete":
-        list_name = arguments.get("list_name", "Dex Today")
+        list_name = arguments.get("list_name", "sw_os Today")
         title_query = arguments["title_query"]
         success, output = run_shell_script("reminders_eventkit.py", "find_and_complete", list_name, title_query)
         if success:
@@ -974,7 +974,7 @@ async def _handle_call_tool_inner(
         return [types.TextContent(type="text", text=json.dumps(result, indent=2))]
 
     elif name == "reminders_clear_completed":
-        list_name = arguments.get("list_name", "Dex Today")
+        list_name = arguments.get("list_name", "sw_os Today")
         success, output = run_shell_script("reminders_eventkit.py", "clear_completed", list_name)
         if success:
             try:
@@ -995,7 +995,7 @@ async def _main():
     """Async main entry point for the MCP server"""
     if _HAS_HEALTH:
         _mark_healthy("calendar-mcp")
-    logger.info("Starting Dex Calendar MCP Server")
+    logger.info("Starting sw_os Calendar MCP Server")
     logger.info("Using Apple Calendar via AppleScript")
     
     async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):

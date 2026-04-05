@@ -229,21 +229,21 @@ Check if QMD MCP tools are available by calling `qmd_status`. **If available:**
 
 ---
 
-### 5.7 Reminders Completion Sync (Dex Today → Dex)
+### 5.7 Reminders Completion Sync (sw_os Today → sw_os)
 
 Check if any tasks were completed on phone since the last plan:
 
 ```
-Use: reminders_list_completed(list_name="Dex Today")
+Use: reminders_list_completed(list_name="sw_os Today")
 ```
 
 For each completed item:
-- Match to a Dex task by title
+- Match to a sw_os task by title
 - Update task status via Work MCP: `update_task_status(task_title="...", status="d")`
 - Surface what was synced:
 
 > "📱 **Synced from phone:**
-> - ✅ "Follow up with Hero Coders" — marked done in Dex"
+> - ✅ "Follow up with Hero Coders" — marked done in sw_os"
 
 **If nothing to sync:** Skip silently.
 
@@ -282,15 +282,15 @@ If BOTH Slack and Teams enabled:
 
 If unhealthy: skip silently (graceful degradation -- no error to user).
 
-### 5.10a Mobile Capture Check (Dex Inbox)
+### 5.10a Mobile Capture Check (sw_os Inbox)
 
 ```
-Use: reminders_list_items(list_name="Dex Inbox")
+Use: reminders_list_items(list_name="sw_os Inbox")
 ```
 
 If items found, surface:
 
-> 📱 **Captured on phone** (3 items in Dex Inbox):
+> 📱 **Captured on phone** (3 items in sw_os Inbox):
 >
 > 1. "Follow up with Peter about roadmap" — captured yesterday 4:32pm
 > 2. "Look into Rovo for in-app guides" — captured today 2:15pm
@@ -305,7 +305,7 @@ If items found, surface:
 - Create task via Work MCP `process_inbox_with_dedup`
 - Mark Reminder as complete via `reminders_complete_item`
 
-**If Dex Inbox is empty:** Skip silently (no "0 items captured" noise).
+**If sw_os Inbox is empty:** Skip silently (no "0 items captured" noise).
 
 ### 5.10b Standard Context Gathering
 
@@ -468,28 +468,28 @@ integrations_used: [calendar, tasks, people, work-intelligence]
 
 ---
 
-## Step 7.5: Push Focus Tasks to Reminders (Dex → iPhone)
+## Step 7.5: Push Focus Tasks to Reminders (sw_os → iPhone)
 
 After generating the plan, push today's P0 and P1 focus tasks to Apple Reminders for native iOS notifications:
 
 1. **Clear yesterday's items:**
    ```
-   Use: reminders_clear_completed(list_name="Dex Today")
+   Use: reminders_clear_completed(list_name="sw_os Today")
    ```
 
 2. **Push today's focus items:**
    For each P0/P1 task in today's focus:
    ```
    Use: reminders_create_item(
-       list_name="Dex Today",
+       list_name="sw_os Today",
        title="Task title",
-       notes="From Dex daily plan",
+       notes="From sw_os daily plan",
        due_date="YYYY-MM-DD"
    )
    ```
 
 3. **Confirm silently:**
-   > "📱 Pushed 3 focus tasks to iPhone Reminders (Dex Today)"
+   > "📱 Pushed 3 focus tasks to iPhone Reminders (sw_os Today)"
 
 **If Reminders MCP unavailable:** Skip silently.
 
@@ -536,6 +536,6 @@ The plan works at multiple levels:
 | Reminders | dex-calendar-mcp | `reminders_list_items`, `reminders_complete_item`, `reminders_create_item`, `reminders_ensure_lists`, `reminders_list_completed`, `reminders_find_and_complete`, `reminders_clear_completed` |
 | Granola | dex-granola-mcp | `get_recent_meetings` |
 | Work | dex-work-mcp | `list_tasks`, `get_week_progress`, `get_meeting_context`, `get_commitments_due`, `analyze_calendar_capacity`, `suggest_task_scheduling` |
-| Improvements | dex-improvements-mcp | `synthesize_changelog`, `synthesize_learnings`, `list_ideas` |
+| Improvements | sw_os-improvements-mcp | `synthesize_changelog`, `synthesize_learnings`, `list_ideas` |
 | Google Workspace | google-workspace-mcp | Gmail query, email search (if enabled) |
 | Teams | teams-mcp | `teams_list_chats`, `teams_search_messages`, `teams_health_check` (if enabled) |

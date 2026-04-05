@@ -190,32 +190,32 @@ Use: process_commitment(commitment_id="comm-XXXXXX-XXX", action="dismiss")
 
 ---
 
-## Step 2.6: Reminders Completion Sync (Dex Today → Dex)
+## Step 2.6: Reminders Completion Sync (sw_os Today → sw_os)
 
 Check if tasks were completed on phone since the morning plan:
 
 ```
-Use: reminders_list_completed(list_name="Dex Today")
+Use: reminders_list_completed(list_name="sw_os Today")
 ```
 
 For each completed item:
-- Match to a Dex task by title
+- Match to a sw_os task by title
 - Update task status via Work MCP: `update_task_status(task_title="...", status="d")`
 - Surface what was synced:
 
 > "📱 **Synced from phone:**
-> - ✅ "Follow up with Hero Coders" — marked done in Dex"
+> - ✅ "Follow up with Hero Coders" — marked done in sw_os"
 
-Also check for tasks completed in Dex today that still have active Reminders:
+Also check for tasks completed in sw_os today that still have active Reminders:
 
 ```
-# For each task completed today in Dex, check if a matching Reminder exists
-Use: reminders_find_and_complete(list_name="Dex Today", title_query="task title")
+# For each task completed today in sw_os, check if a matching Reminder exists
+Use: reminders_find_and_complete(list_name="sw_os Today", title_query="task title")
 ```
 
 Clean up completed items:
 ```
-Use: reminders_clear_completed(list_name="Dex Today")
+Use: reminders_clear_completed(list_name="sw_os Today")
 ```
 
 **If nothing to sync:** Skip silently.

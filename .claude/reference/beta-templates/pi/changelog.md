@@ -19,7 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [0.1.0] - 2026-02-03
 
 ### Added
-- **Initial Pi integration** - Core meta-programming layer for Dex
+- **Initial Pi integration** - Core meta-programming layer for sw_os
 - **MCP bridge** - Task and calendar access for Pi-built tools
 - **Beta activation system** - Feature flags for controlled rollout
 - **Core commands**:

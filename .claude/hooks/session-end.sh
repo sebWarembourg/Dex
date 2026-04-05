@@ -1,7 +1,7 @@
 #!/bin/bash
 # Claude Code SessionEnd Hook
 # Logs session end timestamp for tracking
-# For Dex personal knowledge system
+# For sw_os personal knowledge system
 #
 # ⚠️ IMPORTANT: This only works in Claude Code desktop/CLI
 # - Requires graceful shutdown (via `exit` command or proper quit)

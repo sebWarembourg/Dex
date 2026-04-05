@@ -19,7 +19,7 @@ Help users discover and integrate pre-built MCP servers from the ecosystem, prim
 Say:
 
 ```
-**Want to connect more tools to Dex?**
+**Want to connect more tools to sw_os?**
 
 There's a marketplace of 100+ pre-built MCP servers at:
 **[Smithery.ai](https://smithery.ai/servers)**
@@ -39,7 +39,7 @@ These are production-ready integrations for:
    - Fetch the code/documentation
    - Explain what it does
    - Help you configure it
-   - Integrate into Dex
+   - Integrate into sw_os
    - Update documentation
 
 **Or** if you can't find what you need, run `/create-mcp` to build custom.
@@ -113,7 +113,7 @@ Ready to integrate this?
 ```
 "This is an npm package. Here's how to install:
 
-1. Navigate to your Dex directory
+1. Navigate to your sw_os directory
 2. Install the package:
    ```
    npm install -g [package-name]
@@ -363,7 +363,7 @@ After integration:
 The experience feels like:
 - "That was easier than I expected"
 - "I can do this for any tool I use"
-- "This makes Dex way more powerful"
+- "This makes sw_os way more powerful"
 
 ---
 

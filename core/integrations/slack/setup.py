@@ -2,7 +2,7 @@
 """
 Slack Integration Setup
 
-Guides users through connecting Slack to Dex using the recommended MCP.
+Guides users through connecting Slack to sw_os using the recommended MCP.
 Uses browser cookie auth - no bot creation required!
 """
 
@@ -64,7 +64,7 @@ If you prefer traditional app-based auth:
 
 1. Go to [api.slack.com/apps](https://api.slack.com/apps)
 2. Click **"Create New App"** > **"From scratch"**
-3. Name it "Dex", select your workspace
+3. Name it "sw_os", select your workspace
 4. Go to **"OAuth & Permissions"**
 5. Add these **Bot Token Scopes:**
    - `channels:history` - Read public channel messages
@@ -121,7 +121,7 @@ def install(credential: str, workspace_url: Optional[str] = None) -> Tuple[bool,
     config.setdefault("mcpServers", {})[MCP_CONFIG_KEY] = mcp_config
     save_claude_config(config)
     
-    # Save to Dex integrations config
+    # Save to sw_os integrations config
     dex_config_path = Path(os.environ.get("DEX_VAULT", ".")) / "System" / "integrations" / "slack.yaml"
     dex_config_path.parent.mkdir(parents=True, exist_ok=True)
     

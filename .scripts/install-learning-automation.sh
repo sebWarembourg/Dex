@@ -1,5 +1,5 @@
 #!/bin/bash
-# Install Dex Learning Automation Launch Agents
+# Install sw_os Learning Automation Launch Agents
 #
 # This script installs two background automation jobs:
 # 1. Changelog Checker - Runs every 6 hours to check for Claude Code updates
@@ -23,7 +23,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-echo "=== Dex Learning Automation Installer ==="
+echo "=== sw_os Learning Automation Installer ==="
 echo ""
 
 # Check if uninstall mode

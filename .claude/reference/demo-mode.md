@@ -1,6 +1,6 @@
 # Demo Mode Reference
 
-Dex includes a demo mode with pre-populated content so you can explore the system before adding your own data.
+sw_os includes a demo mode with pre-populated content so you can explore the system before adding your own data.
 
 ## Toggling Demo Mode
 
@@ -12,7 +12,7 @@ Dex includes a demo mode with pre-populated content so you can explore the syste
 
 ## Interactive Demo Selector
 
-When you run `/dex-demo on`, you'll see a menu of **12 validated demo scenarios** that showcase different aspects of Dex.
+When you run `/dex-demo on`, you'll see a menu of **12 validated demo scenarios** that showcase different aspects of sw_os.
 
 **How it works:**
 1. Run `/dex-demo on`
@@ -83,7 +83,7 @@ Demo mode uses content from `System/Demo/` which includes:
 
 ## When to Use Demo Mode
 
-- **New users:** Explore how Dex works before adding your own content
+- **New users:** Explore how sw_os works before adding your own content
 - **Demoing to colleagues:** Show the PKM system with realistic data
 - **Testing commands:** Experiment without affecting your real vault
 

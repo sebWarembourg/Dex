@@ -39,7 +39,7 @@ features:
       - "pi_review"        # Review Pi's work
       - "pi_bridge"        # MCP bridge communication
 
-    # Minimum Dex version required
+    # Minimum sw_os version required
     min_dex_version: "1.0.0"
 
     # Feature flags enabled when activated
@@ -48,8 +48,8 @@ features:
       enable_pi_mcp: true
 
   analytics:
-    name: "Dex Analytics"
-    description: "Optional, privacy-first analytics to help Dave improve Dex. Only tracks which Dex features are used, never content or what you do with them."
+    name: "sw_os Analytics"
+    description: "Optional, privacy-first analytics to help Dave improve sw_os. Only tracks which sw_os features are used, never content or what you do with them."
     version: "0.1.0"
     status: "active"
 
@@ -74,7 +74,7 @@ features:
 
   screenpipe:
     name: "ScreenPipe Integration"
-    description: "Ambient work intelligence - Dex learns what you're working on via screen OCR. Work apps only, all browsers and personal apps blocked. 30-day auto-delete."
+    description: "Ambient work intelligence - sw_os learns what you're working on via screen OCR. Work apps only, all browsers and personal apps blocked. 30-day auto-delete."
     version: "0.1.0"
     status: "active"
 

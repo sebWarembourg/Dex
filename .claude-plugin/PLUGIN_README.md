@@ -1,12 +1,12 @@
-# Dex Plugin
+# sw_os Plugin
 
 **Your AI Chief of Staff as a Claude Code Plugin**
 
-This document explains how Dex works as a Claude Code plugin and how to install it.
+This document explains how sw_os works as a Claude Code plugin and how to install it.
 
 ## What This Plugin Provides
 
-Dex is more than a traditional plugin - it's a complete personal operating system that includes:
+sw_os is more than a traditional plugin - it's a complete personal operating system that includes:
 
 ### Skills (60+)
 - Daily planning and review workflows
@@ -35,7 +35,7 @@ Dex is more than a traditional plugin - it's a complete personal operating syste
 - Git safety checks
 
 ### Vault Structure
-Dex uses the PARA method (Projects, Areas, Resources, Archives):
+sw_os uses the PARA method (Projects, Areas, Resources, Archives):
 - `00-Inbox/` - Capture zone
 - `01-Quarter_Goals/` - Quarterly planning
 - `02-Week_Priorities/` - Weekly focus
@@ -77,7 +77,7 @@ claude plugin add . --scope user
 
 ### Method 3: Marketplace Installation (Coming Soon)
 
-Once Dex is added to a marketplace:
+Once sw_os is added to a marketplace:
 ```bash
 claude plugin install dex@marketplace-name
 ```
@@ -86,7 +86,7 @@ claude plugin install dex@marketplace-name
 
 ### 1. Python Requirements
 
-Dex MCP servers require Python 3.10+:
+sw_os MCP servers require Python 3.10+:
 
 ```bash
 # Check Python version
@@ -132,7 +132,7 @@ The plugin's MCP servers use the `VAULT_PATH` environment variable to find your 
 }
 ```
 
-During onboarding, Dex automatically configures this path.
+During onboarding, sw_os automatically configures this path.
 
 ### How Skills Work
 
@@ -157,17 +157,17 @@ Session hooks run automatically:
 
 Most Claude Code plugins provide agents, commands, or skills that augment your workflow.
 
-**Dex is different:**
+**sw_os is different:**
 - It creates a complete vault structure (folders, files, configuration)
 - It manages persistent state (tasks, people, projects, goals)
 - It has a learning system that improves over time
 - It requires onboarding to tailor the system to your role
 
-Think of Dex as **"installing an operating system"** rather than **"adding a feature"**.
+Think of sw_os as **"installing an operating system"** rather than **"adding a feature"**.
 
 ## Customization
 
-After installation, you can customize Dex by:
+After installation, you can customize sw_os by:
 
 1. **Adding custom skills** - Use `/create-skill` to build your own workflows
 2. **Editing CLAUDE.md** - Add personal instructions in the USER_EXTENSIONS block
@@ -182,7 +182,7 @@ The plugin includes a self-update system:
 # Check for updates
 /dex-whats-new
 
-# Update Dex
+# Update sw_os
 /dex-update
 
 # Rollback if needed
@@ -214,7 +214,7 @@ If onboarding gets stuck:
 
 ## Support
 
-- **Documentation**: See `06-Resources/Dex_System/Dex_System_Guide.md` in your vault
+- **Documentation**: See `06-Resources/sw_os_System/Dex_System_Guide.md` in your vault
 - **Issues**: Report on [GitHub Issues](https://github.com/davekilleen/dex/issues)
 - **Discussions**: Join [GitHub Discussions](https://github.com/davekilleen/dex/discussions)
 

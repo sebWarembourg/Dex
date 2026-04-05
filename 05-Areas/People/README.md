@@ -30,7 +30,7 @@ Person pages aggregate everything related to someone in one place. Instead of se
 
 ## Workflow
 
-1. **Auto-creation** — Dex creates/updates person pages when processing meetings (via `/process-meetings`)
+1. **Auto-creation** — sw_os creates/updates person pages when processing meetings (via `/process-meetings`)
 2. **Prep** — Before meetings, check their page for context (via `/meeting-prep`)
 3. **Manual updates** — Add context as you learn more about them
 

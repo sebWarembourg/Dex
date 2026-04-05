@@ -114,13 +114,13 @@ For the same calendar with 3,000 events:
 **Before EventKit:**
 - User asks "what meetings do I have?"
 - 30-second wait (user opens calendar manually)
-- User stops asking Dex about calendar
+- User stops asking sw_os about calendar
 - Calendar features become unused
 
 **After EventKit:**
 - User asks "what meetings do I have?"
 - Response in under 1 second
-- User trusts Dex for calendar queries
+- User trusts sw_os for calendar queries
 - Calendar features become part of daily workflow
 
 ### Technical Benefits
@@ -199,7 +199,7 @@ Return to user (0.5 seconds)
 
 Write operations (create/delete events) are still using AppleScript because:
 
-1. **Low Frequency:** Users rarely create/delete events from Dex
+1. **Low Frequency:** Users rarely create/delete events from sw_os
 2. **Simplicity:** AppleScript "create event" is 5 lines vs 30 lines of EventKit
 3. **Permission Safety:** Write operations need explicit user intent
 4. **Good Enough:** 2-second create time is acceptable for rare operations

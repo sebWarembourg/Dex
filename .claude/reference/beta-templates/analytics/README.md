@@ -1,11 +1,11 @@
-# Dex Analytics Beta
+# sw_os Analytics Beta
 
-Welcome to the Dex Analytics beta! By activating this feature, you're helping Dave understand how people use Dex so he can make it better.
+Welcome to the sw_os Analytics beta! By activating this feature, you're helping Dave understand how people use sw_os so he can make it better.
 
 ## What Gets Tracked
 
 **What we track:**
-- Which Dex built-in features you use (e.g., "ran /daily-plan", "created a task")
+- Which sw_os built-in features you use (e.g., "ran /daily-plan", "created a task")
 - When features are used (for journey analysis)
 - Basic metadata: days since setup, feature adoption score, journey stage
 
@@ -25,8 +25,8 @@ Welcome to the Dex Analytics beta! By activating this feature, you're helping Da
 
 ## How It Works
 
-1. **Consent prompt:** During your next planning session (`/daily-plan`, `/review`, etc.), you'll be asked once if you want to help improve Dex
-2. **Your choice:** Say yes to help, or no thanks — Dex works exactly the same either way
+1. **Consent prompt:** During your next planning session (`/daily-plan`, `/review`, etc.), you'll be asked once if you want to help improve sw_os
+2. **Your choice:** Say yes to help, or no thanks — sw_os works exactly the same either way
 3. **Event firing:** If you opt in, anonymous feature usage events are sent to Pendo
 
 ## Configuration

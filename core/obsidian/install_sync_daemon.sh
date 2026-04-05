@@ -6,7 +6,7 @@ set -e  # Exit on error
 VAULT_PATH="${VAULT_PATH:-$(pwd)}"
 PLIST_PATH="$HOME/Library/LaunchAgents/com.dex.obsidian-sync.plist"
 
-echo "Dex Obsidian Sync Daemon Installer"
+echo "sw_os Obsidian Sync Daemon Installer"
 echo "===================================="
 echo ""
 
@@ -24,7 +24,7 @@ if ! python3 -c "import watchdog" 2>/dev/null; then
     pip3 install watchdog
 fi
 
-echo "Installing Dex Obsidian Sync Daemon..."
+echo "Installing sw_os Obsidian Sync Daemon..."
 echo "  Vault path: $VAULT_PATH"
 echo "  LaunchAgent: $PLIST_PATH"
 echo ""

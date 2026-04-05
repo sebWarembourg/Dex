@@ -74,10 +74,10 @@ Existing User Flow (/dex-update):
 │ Detected in your config:                                    │
 │ ✓ notion-mcp-server (v1.2.0)                               │
 │                                                              │
-│ Dex recommends: @notionhq/notion-mcp-server (v2.1.0)       │
+│ sw_os recommends: @notionhq/notion-mcp-server (v2.1.0)       │
 │ Benefits: Official, better maintained, more features        │
 │                                                              │
-│ [Keep existing] [Try Dex version] [Skip for now]           │
+│ [Keep existing] [Try sw_os version] [Skip for now]           │
 └─────────────────────────────────────────────────────────────┘
 ```
 

@@ -5,11 +5,11 @@ description: Create new MCP integration with guided wizard
 
 ## What This Command Does
 
-**In plain English:** A guided wizard that helps you create and integrate an MCP server into Dex. No coding knowledge required - you describe what you want, we build it together.
+**In plain English:** A guided wizard that helps you create and integrate an MCP server into sw_os. No coding knowledge required - you describe what you want, we build it together.
 
 **When to use it:**
-- You want to connect Dex to an external service (calendar, email, CRM, API)
-- You have data somewhere that would be useful in Dex
+- You want to connect sw_os to an external service (calendar, email, CRM, API)
+- You have data somewhere that would be useful in sw_os
 - You want to automate interactions with a tool you use regularly
 
 **How to run it:**
@@ -108,7 +108,7 @@ MCP doesn't make AI smarter - it gives AI **reliable ways to get real data**. Th
 ```
 🔌 **MCP Server Creation Wizard**
 
-MCP (Model Context Protocol) lets Dex connect to external tools and services. Instead of guessing or saying "I don't have access", AI can query real data and give you accurate answers.
+MCP (Model Context Protocol) lets sw_os connect to external tools and services. Instead of guessing or saying "I don't have access", AI can query real data and give you accurate answers.
 
 **The difference MCP makes:**
 - ❌ Without: "I'd estimate you have around 10-15 support tickets..."
@@ -131,10 +131,10 @@ MCP (Model Context Protocol) lets Dex connect to external tools and services. In
 1. Help you describe what you want to connect
 2. Design the integration together
 3. Generate the MCP server code
-4. Integrate it into Dex
+4. Integrate it into sw_os
 5. Update all documentation so future sessions know how to use it
 
-Ready to get started? **What would you like to connect Dex to?**
+Ready to get started? **What would you like to connect sw_os to?**
 
 (Just describe it in plain English — e.g., "my Google Calendar", "Notion database", "company CRM")
 ```
@@ -178,7 +178,7 @@ This helps me understand what authentication we'll need.
 
 **Question 3: Data of interest**
 ```
-What specific information do you want Dex to access?
+What specific information do you want sw_os to access?
 
 Be specific about:
 - What types of data (events, messages, records)
@@ -436,7 +436,7 @@ Let me know when you're ready to integrate.
 
 ## Phase 4: Integration
 
-### Goal: Connect the MCP server to Dex
+### Goal: Connect the MCP server to sw_os
 
 **Step 4.1: Update CLAUDE.md**
 
@@ -480,7 +480,7 @@ Check if CLAUDE.md has mcp_instructions section. If not, add:
 
 **Step 4.3: Update System Guide**
 
-Add to `06-Resources/Dex_System/Dex_System_Guide.md` under Integration Options:
+Add to `06-Resources/sw_os_System/Dex_System_Guide.md` under Integration Options:
 
 ```markdown
 | **[Service]** | [Brief description of capabilities] |

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Dex Meeting Intel - Background Automation Installer
+# sw_os Meeting Intel - Background Automation Installer
 #
 # This script sets up a macOS Launch Agent to automatically sync meetings
 # from Granola every 30 minutes. No terminal commands visible during /process-meetings.
@@ -27,7 +27,7 @@ NC='\033[0m' # No Color
 
 echo ""
 echo "╔════════════════════════════════════════════╗"
-echo "║   Dex Meeting Intel - Background Sync      ║"
+echo "║   sw_os Meeting Intel - Background Sync      ║"
 echo "╚════════════════════════════════════════════╝"
 echo ""
 
