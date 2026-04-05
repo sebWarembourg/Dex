@@ -25,7 +25,6 @@ sw_os is more than a traditional plugin - it's a complete personal operating sys
 - **resume** - Resume building and optimization
 - **onboarding** - First-time setup wizard
 - **beta** - Beta feature management
-- **dex-analytics** - Anonymous usage analytics
 - **dex-improvements** - System improvement backlog
 
 ### Session Hooks

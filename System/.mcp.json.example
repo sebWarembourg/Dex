@@ -44,7 +44,7 @@
       "type": "stdio",
       "command": "python",
       "args": [
-        "{{VAULT_PATH}}/core/mcp/dex_improvements_server.py"
+        "{{VAULT_PATH}}/core/mcp/sw_os_improvements_server.py"
       ],
       "env": {
         "VAULT_PATH": "{{VAULT_PATH}}"
@@ -85,16 +85,6 @@
       "command": "python",
       "args": [
         "{{VAULT_PATH}}/core/mcp/analytics_server.py"
-      ],
-      "env": {
-        "VAULT_PATH": "{{VAULT_PATH}}"
-      }
-    },
-    "session-memory": {
-      "type": "stdio",
-      "command": "python",
-      "args": [
-        "{{VAULT_PATH}}/core/mcp/session_memory_server.py"
       ],
       "env": {
         "VAULT_PATH": "{{VAULT_PATH}}"
