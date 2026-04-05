@@ -100,7 +100,7 @@ Objectif : séparer le framework sw_os du vault Dex pour que les skills/hooks so
 
 - **URL :** https://github.com/sebWarembourg/SW_os
 - **Licence :** MIT (Seb Warembourg) — fork original était MIT, Dave Killeen a changé ensuite en PolyForm Noncommercial, non applicable rétroactivement
-- **Lien de fork :** toujours actif (ticket support GitHub à faire si besoin de couper)
+- **Lien de fork :** toujours actif (ticket support GitHub à faire si besoin de couper). On veut en tout cas complètement s'isoler du fonctionnement initial et de ces dépendances.
 
 ---
 
